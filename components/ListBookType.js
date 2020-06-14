@@ -4,7 +4,6 @@ import{
 }from 'react-native'
 
 export default function CatagoriesList (props){
-   
     const {typeInfo,onPress}= props;
      return (
          <TouchableOpacity activeOpacity={0.85} onPress= {onPress}>

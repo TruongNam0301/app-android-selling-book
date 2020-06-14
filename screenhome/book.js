@@ -3,13 +3,6 @@ import {View,StyleSheet,Text,Image,Button,Alert} from 'react-native';
 import {CartContext} from '../screencart/cartdata'
 
 export default class BookScreen extends Component {
-    constructor(props){
-        super (props);
-        this.state ={
-            data:''
-        };
-        
-    }
    
     render (){
         let book =this.props.route.params.book;

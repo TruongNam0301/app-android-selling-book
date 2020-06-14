@@ -1,6 +1,8 @@
 import React ,{Component} from 'react';
 import { Alert,FlatList} from 'react-native';
+
 export const CartContext = React.createContext();
+
 export class CartProvider extends Component{
     constructor(props){
         super(props);

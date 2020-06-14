@@ -5,12 +5,6 @@ import CategoriesCart from '../components/CategoriesCart';
 import { Icon } from 'react-native-elements';
 
 export default class CartBook extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            cartList: ''
-        };
-    }
     render(){
         return (
             <CartContext.Consumer>
@@ -18,6 +12,7 @@ export default class CartBook extends Component{
                     <FlatList
                         data ={cartItems}
                         renderItem = {({item})=> <CategoriesCart item={item}/>}
+                        
                     >
                     </FlatList>
                 ) }                

@@ -9,7 +9,8 @@ import HomeScreen from './screenhome/home';
 import DetailsScreen from './screenhome/detail';
 import BookInfoScreen from './screenhome/book';
 import { CartProvider } from './screencart/cartdata';
-import CartBook from './screencart/CartBook'
+import CartBook from './screencart/CartBook';
+import SearchScreen from './screensearch/bookSearch';
   
 //import AppNavigator from './navigator.js'
 const AppNavigator = createStackNavigator();
@@ -18,15 +19,14 @@ const Drawer = createDrawerNavigator();
 
 function SearchStackScreen (){
   return (
-    <Text>search</Text>
+    <SearchScreen/>
   )
 }
 
 function DrawerNavigation(){
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name = 'profile' component = {TabNavigation} options={{
-                drawerLabel: () => null}}/>
+      <Drawer.Screen name = 'profile' component = {TabNavigation} />
     </Drawer.Navigator>
   )
 }
@@ -53,10 +53,17 @@ function TabNavigation(){
             tabBarOptions = {{
               activeTintColor: 'tomato',
               inactiveTintColor: 'gray',
+              keyboardHidesTabBar: true,
+              style: {
+              position:'absolute'
+              },
             }}
+             
           >
             <Tab.Screen name = "Home" component = {HomeStackScreen} />
-            <Tab.Screen name = "Search" component = {SearchStackScreen} />
+            <Tab.Screen name = "Search" component = {SearchStackScreen} 
+           
+            />
             <Tab.Screen name = "Cart" component = {CartBook} />
           </Tab.Navigator>
   )

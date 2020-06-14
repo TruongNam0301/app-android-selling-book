@@ -43,12 +43,13 @@ export default class Home extends Component {
     return (
       <FlatList 
         data={bookType}
-        renderItem={({ item, index}) => <ListBookType key={index} typeInfo={item}
-                                                  onPress ={()=>navigation.navigate("Details",{
-                                                    type: item
-                                                  })}
-                                          
+        renderItem={({ item }) => <ListBookType 
+                                      typeInfo={item}
+                                      onPress ={()=>navigation.navigate("Details",{
+                                        type: item
+                                      })}                 
         />}
+        keyExtractor={item => item.idType}
       >
       </FlatList>
   
