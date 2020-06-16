@@ -10,11 +10,52 @@ export class CartProvider extends Component{
             cartItems: [],
         };
         this.addToCart=this.addToCart.bind(this)
+        this.increaseQuantity=this.increaseQuantity.bind(this)
+        this.decreaseQuantity = this.decreaseQuantity.bind(this) 
+        this.calculateTotal= this.calculateTotal.bind(this)
     }
 
     addToCart (product){ 
-        this.setState({cartItems: this.state.cartItems.concat(product)}); 
-        alert('success');
+        var item ={};
+        item.product=product;
+        item.quantity=1;
+        const cartItems= [...this.state.cartItems];
+        let check=cartItems.findIndex(function(item){
+            return ( item.product.idList===product.idList)
+        })
+        if(check!=-1){
+            alert('the product has been in the cart')
+        }
+        else{
+            this.setState({cartItems: this.state.cartItems.concat(item)}); 
+            alert('Success')
+        }
+    }
+
+    increaseQuantity(index){
+        const cartItems= [...this.state.cartItems];
+        cartItems[index].quantity +=1;
+        this.setState ({cartItems})
+    }
+
+    decreaseQuantity(index){
+        const cartItems= [...this.state.cartItems];
+        cartItems[index].quantity -=1;
+        if(cartItems[index].quantity===0){
+            cartItems.splice(index,1)
+        }
+         this.setState ({cartItems})
+    }
+
+    calculateTotal(){
+        const cartItems=[...this.state.cartItems];
+        let total=0;
+        let length= cartItems.length;
+        for (let i=0;i<length;++i){
+            let s=cartItems[i].product.price*cartItems[i].quantity;
+            total = total + s;
+        }
+        return total;
     }
     render(){
         const {cartItems} = this.state;
@@ -22,7 +63,11 @@ export class CartProvider extends Component{
                 <CartContext.Provider value = 
                 {{
                     cartItems : this.state.cartItems,
-                    addToCart : this.addToCart
+                    totalPrice : this.state.totalPrice,
+                    addToCart : this.addToCart,
+                    increaseQuantity: this.increaseQuantity,
+                    decreaseQuantity: this.decreaseQuantity,
+                    calculateTotal:this.calculateTotal,
                 }}>
                     {this.props.children}
                 </CartContext.Provider> 

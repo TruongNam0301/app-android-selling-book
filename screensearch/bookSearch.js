@@ -92,9 +92,10 @@ const styles = StyleSheet.create({
     width: "90%",
     borderColor: "black",
     borderWidth: 1,
-    borderRadius: 15,
+    borderRadius: 2,
     paddingHorizontal: 10,
-    marginVertical:25
+    marginVertical:25,
+    backgroundColor:"white"
   },
   item: {
     flex: 1,
@@ -102,5 +103,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     borderBottomWidth: 1,
     borderBottomColor: "gray",
+    backgroundColor:"white",
+    borderRadius:3
   },
 });

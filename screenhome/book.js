@@ -6,7 +6,6 @@ export default class BookScreen extends Component {
    
     render (){
         let book =this.props.route.params.book;
-        console.log(book);
         return (
             <View style={{paddingTop:10}}>
                 <View style={{flexDirection:'row'}}>
