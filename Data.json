@@ -1,0 +1,588 @@
+{
+    "typeBook":[
+        {
+            "idType": "1",
+            "nameType": "Kinh Tế",
+            "image": "https://www.topuniversities.com/sites/default/files/styles/700xauto/public/articles/lead-images/book_and_coffee.jpg"
+        },
+        {
+            "idType": "2",
+            "nameType": "Thiếu Nhi",
+            "image": "https://karencomer.com.au/wp-content/uploads/2017/08/bigstock-Back-to-school-Happy-cute-ind-193890661-1024x595.jpg"
+        },
+        {
+            "idType": "3",
+            "nameType": "Văn Học Việt Nam",
+            "image": "https://vinhvien.edu.vn/app_images/news/2020/2/28/tu-tuong-yeu-nuoc-the-ky-x-xv-dong-chu-luu-trong-van-hoc-viet-nam-1-768-11168.jpg"
+        },
+        {
+            "idType": "4",
+            "nameType": "Văn Học Nước Ngoài",
+            "image": "https://vnwriter.net/wp-content/uploads/2018/06/van-hoc-nuoc-ngoai-hay-780x405.jpg"
+        },
+        {
+            "idType": "5",
+            "nameType": "Văn Hóa - Du Lịch",
+            "image": "http://www.whitmers.com/travel.jpg"
+        }
+    ],
+    "listBook": [
+        {
+        "idList": "1",
+        "idType": "1",
+        "name": "Tư Duy Nhanh Và Chậm",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/77/3c/9e/6deec49282e3416f38b46e57d1ffd79f.jpg",
+        "author": "Daniel Kahneman",
+        "price": "100000",
+        "description":
+            "Chúng ta thường tự cho rằng con người là sinh vật có lý trí mạnh mẽ, khi quyết định hay đánh giá vấn đề luôn kĩ lưỡng và lý tính. Nhưng sự thật là, dù bạn có cẩn trọng tới mức nào, thì trong cuộc sống hàng ngày hay trong vấn đề liên quan đến kinh tế, bạn vẫn có những quyết định dựa trên cảm tính chủ quan của mình. “Tư duy nhanh và chậm”, cuốn sách nổi tiếng tổng hợp tất cả nghiên cứu được tiến hành qua nhiều thập kỷ của nhà tâm lý học từng đạt giải Nobel Kinh tế Daniel Kahneman sẽ cho bạn thấy những sư hợp lý và phi lý trong tư duy của chính bạn. Cuốn sách được đánh giá là “kiệt tác” trong việc thay đổi hành vi của con người, Tư duy nhanh và chậm đã dành được vô số giải thưởng danh giá..."
+        },
+        {
+        "idList": "2",
+        "idType": "1",
+        "name": "Kỹ Năng Bán Hàng Tuyệt Đỉnh",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/dc/2c/b4/cb0230cc125a7474baacd413c346fa28.jpg",
+        "author": "Pamela Druckerman",
+        "price": "100000",
+        "description":
+            "Kỹ năng bán hàng tuyệt đỉnh sẽ cho bạn đọc biết được những quy tắc bán hàng, vốn là điều kiện tiên quyết để gặt hái thành công trong bất kỳ lĩnh vực nào, với bất kỳ ai, bất kỳ ở đâu. Trong từng trang sách, tác giả Cardone giới thiệu và phân tích kỹ lưỡng những kỹ thuật và bước tiếp cận thiết yếu để bạn có thể làm chủ nghệ thuật bán hàng trong mọi tình huống. Bạn sẽ học được cách xử trí khi bị khách hàng từ chối, cách lật ngược tình thế, rút ngắn quy trình bán hàng và làm sao để bản thân ngày càng chuyên nghiệp hơn."
+        },
+        {
+        "idList": "3",
+        "idType": "1",
+        "name": "Người Nam Châm",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/0f/2b/f4/6ada8869a4ea8cfd557729253324c3fb.jpg",
+        "author": "Jack Canfield & DD.Watkins",
+        "price": "100000",
+        "description":
+            "Cuốn sách viết về cách hoạt động của Luật hấp dẫn trong cuộc sống của bạn, từ đó bạn có thể hiểu nhiều hơn về bản thân mình - thực ra bạn là ai và tại sao bạn lại ở đây. Cuốn sách này chính là chìa khóa của bạn. Nó có thể mở cánh cửa tới tương lai như bạn mong ước và đưa bạn tới con đường có nhiều niềm vui, sung túc và giàu có hơn. Khi đọc cuốn sách này, bạn sẽ thấy mình được truyền cảm hứng vì bạn nhận ra rằng bạn có thể tạo ra cuộc sống mà bạn khao khát, và bạn sẽ được trao quyền khi sử dụng những công cụ, những chiến lược và những khái niệm cơ bản được chuyển tải trong những trang sách này."
+        },
+        {
+        "idList": "4",
+        "idType": "1",
+        "name": "Qua Pixar Là Vô Cực",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/media/catalog/product/h/i/hinh-5.u4939.d20171023.t153232.729371.jpg",
+        "author": "Lawrence Levy",
+        "price": "100000",
+        "description":
+            "To Pixar and Beyond là một câu chuyện phi thường về những gì diễn ra sau đó: Làm thế nào Levy, Jobs và đội ngũ Pixar phát triển và thực hiện một lộ trình gần như không tưởng để giúp Pixar chuyển mình từ một công ty đồ họa - nghệ thuật không tên tuổi thành một trong những câu chuyện thành công vĩ đại nhất Hollywool. Tất cả đều diễn ra trong thế giới của Sillon Valley và Hollywood, độc giả sẽ được dẫn dắt đi qua những câu chuyện của Pixar, Disney, các công ty luật và các ngân hàng đầu tư. Những thực tế thú vị và chân thực từ những bước đầu đi lên của Pixar, những rủi ro mà Pixar đương đầu, sự hợp tác và tình bạn lâu dài của Levy và Jobs, Levy đã nhận ra một Pixar khác hơn như thế nào, tất cả đều có tính ứng dụng cao trong mọi phương diện cuộc sống của chúng ta."
+        },
+        {
+        "idList": "5",
+        "idType": "1",
+        "name": "Nhà Lãnh Đạo Không Chức Danh",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/media/catalog/product/n/h/nhalanhdao.u2769.d20170307.t090846.484463.jpg",
+        "author": "Robin Sharma",
+        "price": "100000",
+        "description":
+            "Suốt hơn 15 năm, Robin Sharma đã thầm lặng chia sẻ với những công ty trong danh sách Fortune 500 và nhiều người siêu giàu khác một công thức thành công đã giúp ông trở thành một trong những nhà cố vấn lãnh đạo được theo đuổi nhiều nhất thế giới. Đây là lần đầu tiên Sharma công bố công thức độc quyền này với bạn, để bạn có thể đạt được những gì tốt nhất, đồng thời giúp tổ chức của bạn có thể có những bước đột phá đến một cấp độ thành công mới trong thời đại thiên biến vạn hóa như hiện nay."
+        },
+        {
+        "idList": "6",
+        "idType": "1",
+        "name": "Rạng Danh Tài Trí Việt Năm Châu",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/7f/12/38/54aa50d124fef6ac2596b4337a7e0c20.png",
+        "author": "Pamela Druckerman",
+        "price": "100000",
+        "description":
+        "Cuốn sách hy vọng là dấu ấn của niềm tự hào cho người Việt và đặc biệt là “ngọn hải đăng” chỉ đường hành động cho những bạn trẻ Việt ấp ủ giấc mơ, hoài bão vươn mình ra biển lớn. Mong rằng “Rạng danh tài trí Việt năm châu” – như tên gọi của nó sẽ chắp cánh cho trí tuệ và tâm hồn các thế hệ trẻ Việt Nam trên bước đường tìm hiểu, chứng minh mình là ai cũng như chinh phục, tạo dựng những đỉnh cao bằng chính sức mình ở toàn cầu."
+        },
+        {
+        "idList": "7",
+        "idType": "1",
+        "name": "Khởi Nghiệp Bán Lẻ",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/2c/b7/cc/060a6fa7491fabb4ce7e395fdc008757.jpg",
+        "author": "Trần Thanh Phong",
+        "price": "100000",
+        "description":
+        "Không chỉ có Sam Walton của đế chế bán lẻ Walmart, thế kỷ 21 đang chứng kiến sự bùng nổ của dân số, công nghệ và mua sắm trực tuyến, theo đó hàng loạt tỷ phú bán lẻ mới đã ra đời. Ở Mỹ có Jeff Bezos của Amazon. Ở châu Âu có Ortega với chuỗi bán lẻ thời trang Zara. Ở Trung Quốc có Lý Gia Thành của chuỗi cửa hàng mỹ phẩm - dược phẩm Watsons, Jack Ma của Taobao. Ở Việt Nam cũng có Nguyễn Đức Tài với chuỗi bán lẻ Thế Giới Di Động. Họ khác nhau về tuổi tác, màu da, trình độ học vấn, nhưng họ giống nhau ở hai điểm: họ kinh doanh bán lẻ và rất thành công.Khởi Nghiệp Bán Lẻ là quyển sách không thể thiếu cho những ai muốn thành công và giàu có bằng những cửa hàng đông khách. Sách được viết bởi một doanh nhân kinh nghiệm gần 10 năm trong ngày bán lẻ, từng mở hơn 65 cửa hàng thời trang trên toàn quốc."
+        },
+        {
+        "idList": "8",
+        "idType": "1",
+        "name": "9 Bước Tự Do Tài Chính",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/8f/c0/d8/348e7b0a3a364671552b549c658353c4.jpg",
+        "author": "Suze Orman",
+        "price": "100000",
+        "description":
+        "Với “9 bước đơn giản để đạt được tự do tài chính” bạn sẽ học được tất cả những điều bạn cần biết để chịu trách nhiệm, tôn trọng với số tiền mà bạn có, ngay cả với những số tiền mà bạn chưa có. Những triết lý mà Suze Orman chia sẻ mang lại cho bạn nhiều giá trị hơn việc kiếm tiền của bạn. Bạn sẽ hiểu được ý nghĩa thực sự của sự giàu có để bạn có thể sống một cuộc đời mà không hối tiếc. Nếu ngay bây giờ bạn vẫn không thể kiểm soát được tiền bạc của bạn thì cuốn sách “9 bước đơn giản để đạt được tự do tài chính” là dành cho chính bạn."
+        },
+        {
+        "idList": "9",
+        "idType": "1",
+        "name": "Câu Hỏi Là Câu Trả Lời",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/ts/product/3e/29/5c/ca984698a07fadb69b154eb5168885c9.jpg",
+        "author": "",
+        "price": "100000",
+        "description":
+            "Làm sao để thuyết phục được khách hàng bỏ tiền ra mua sản phẩm của mình. Một câu hỏi không đơn giản. Và là câu hỏi xuyên suốt trong cuộc đời bất cứ người bán hàng nào. Bán được hàng - một mục tiêu vô cùng quan trọng, là sự sống còn của người bán hàng lẫn doanh nghiệp. Tuy nhiên, không phải người bán hàng nào cũng làm được điều đó.Allan Pease là tác giả của cuốn sách Câu hỏi là câu trả lời. Khi còn là cậu bé, ông đã gõ cửa từng nhà để bán từng miếng xốp rửa chén, năm 19 tuổi, Allan Pease bắt đầu bằng việc bán bảo hiểm nhân thọ và sau đó rất thành công. Trong “Câu hỏi là câu trả lời” không chỉ giúp bạn bán được hàng mà bạn sẽ có được nhiều kỹ năng tuyệt vời như: Hiểu được ý muốn của khách hàng, hay cách để mở một cuộc nói chuyện với khách hàng, những ngôn ngữ cụ thể của cơ thể để tạo ấn tượng tốt với lần đầu gặp cũng như duy trì cuộc nói chuyện….Câu hỏi là câu trả lời chỉ cho bạn cách để đạt được sự đồng thuận trong kinh doanh, khi ấy bạn sẽ là đối tác với khách hàng, chứ không phải là một người bán hàng đang mong chờ sự giúp đỡ hay thương hại của người mua để họ bỏ tiền ra mua món hàng của bạn."
+        },
+        {
+        "idList": "10",
+        "idType": "1",
+        "name": "Nếu tôi biết được khi còn 20",
+        "image":
+            "https://salt.tikicdn.com/cache/280x280/media/catalog/product/i/m/img301.u3059.d20170616.t102644.74862.jpg",
+        "author": "Tina Seelig",
+        "price": "100000",
+        "description":
+            "Hiểu được những khó khăn, đặc biệt của những người trẻ, trước các bước ngoặt như thế trong cuộc đời, tác giả – một doanh nhân, một giáo viên, một nhà khoa học – đã dồn tâm huyết viết nên những chia sẻ tuy nhẹ nhàng và khiêm nhường, nhưng thật sâu sắc. Những trang sách chứa đầy ví dụ thú vị, cả trong phòng học lẫn trong phòng họp, về những con người sẵn sàng phấn đấu để vượt xa các tiêu chuẩn ở mức “vừa đủ”, thách thức các giả định hay quan điểm đã thành lối mòn, không bao giờ bỏ lỡ cơ hội để vươn tới tiềm năng cao nhất, và nhờ đó đạt tới những thành công vang dội."
+        },
+        {
+        "idList": "11",
+        "idType": "2",
+        "name": "Cuộc Sống Vô Cùng Đáng Ghét May Mà Mình Vẫn Cứ Đáng Yêu",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_32593.jpg",
+        "author": "Lâm Đế Hoán",
+        "price": "100000",
+        "description":
+            "Cuốn sách với những hình vẽ ngộ nghĩnh của họa sĩ Lâm Đế Hoán chia sẻ những góc nhìn hài hước và không kém phần sâu sắc về muôn mặt của cuộc sống."
+        },
+        {
+        "idList": "12",
+        "idType": "2",
+        "name": "Hoàng Tử Bé (Tái Bản 2019)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_187010.jpg",
+        "author": "Antoine De Saint-Exupéry",
+        "price": "100000",
+        "description":
+            "Hoàng tử bé được viết ở New York trong những ngày tác giả sống lưu vong và được xuất bản lần đầu tiên tại New York vào năm 1943, rồi đến năm 1946 mới được xuất bản tại Pháp. Không nghi ngờ gì, đây là tác phẩm nổi tiếng nhất, được đọc nhiều nhất và cũng được yêu mến nhất của Saint-Exupéry. Cuốn sách được bình chọn là tác phẩm hay nhất thế kỉ 20 ở Pháp, đồng thời cũng là cuốn sách Pháp được dịch và được đọc nhiều nhất trên thế giới. Với 250 ngôn ngữ dịch khác nhau kể cả phương ngữ cùng hơn 200 triệu bản in trên toàn thế giới, Hoàng tử bé được coi là một trong những tác phẩm bán chạy nhất của nhân loại."
+        },
+        {
+        "idList": "13",
+        "idType": "2",
+        "name": "Dế Mèn Phiêu Lưu Ký (Tái Bản 2019)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/d/e/de-men-phieu-luu-ky-_tb-2019.jpg",
+        "author": "Tô Hoài",
+        "price": "100000",
+        "description":
+            "“Một con dế đã từ tay ông thả ra chu du thế giới tìm những điều tốt đẹp cho loài người. Và con dế ấy đã mang tên tuổi ông đi cùng trên những chặng đường phiêu lưu đến với cộng đồng những con vật trong văn học thế giới, đến với những xứ sở thiên nhiên và văn hóa của các quốc gia khác. Dế Mèn Tô Hoài đã lại sinh ra Tô Hoài Dế Mèn, một nhà văn trẻ mãi không già trong văn chương...” - Nhà phê bình Phạm Xuân Nguyên"
+        },
+        {
+        "idList": "14",
+        "idType": "2",
+        "name": "Có Hai Con Mèo Ngồi Bên Cửa Sổ",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/o/cohaiconmeobencuasotaiban2018_1.jpg",
+        "author": "Nguyễn Nhật Ánh",
+        "price": "100000",
+        "description":
+            "CÓ HAI CON MÈO NGỒI BÊN CỬA SỔ là tác phẩm đầu tiên của nhà văn Nguyễn Nhật Ánh viết theo thể loại đồng thoại. Đặc biệt hơn nữa là viết về tình bạn của hai loài vốn là thù địch của nhau mèo và chuột. Đó là tình bạn giữa mèo Gấu và chuột Tí Hon."
+        },
+        {
+        "idList": "15",
+        "idType": "2",
+        "name": "Cái Tết Của Mèo Con (Tái Bản 2019)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_186943.jpg",
+        "author": "Nguyễn Đình Thi, Thùy Dung",
+        "price": "100000",
+        "description":
+            "“Cái Tết của Mèo con” là bài học về lòng quả cảm và tinh thần đoàn kết. Câu chuyện mang đến thông điệp cho các bạn nhỏ của chúng ta: Lòng dũng cảm là một phẩm chất, được hình thành khi ta rèn luyện mỗi ngày."
+        },
+        {
+        "idList": "16",
+        "idType": "2",
+        "name": "Vì Sao Tớ Yêu Bố (Tái Bản 2019)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_182428.jpg",
+        "author": "Daniel Howarth",
+        "price": "100000",
+        "description":
+            "Seri sách tranh “Vì sao tớ yêu...” được đông đảo bạn đọc nhỏ tuổi yêu thích và say mê đọc mỗi tối. Bằng tranh vẽ biểu cảm, thơ mộng về thế giới tự nhiên cùng lời văn êm ái, ngọt ngào như thơ, bộ sách “Vì sao tớ yêu...” là những lời yêu thương của con trẻ trên khắp thế giới dành tặng cho ông bà, cha mẹ mình..."
+        },
+        {
+        "idList": "17",
+        "idType": "2",
+        "name": "Cơ Thể Con Là Của Con",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9786047736041_2.jpg",
+        "author": "Dagma Geisler",
+        "price": "100000",
+        "description":
+            "“Xâm hại tình dục trẻ em”, “Bắt cóc trẻ em” vẫn đang là từ khóa nóng trên những trang mạng hiện nay. Chúng ta tự hỏi rằng, liệu có phải gần đây những tội phạm ấu dâm, bắt cóc có xu hướng tăng lên? Hay từ xưa đến nay chúng vẫn diễn ra như thế, chỉ có khác chăng thời đại này với sự lan truyền của mạng xã hội và tư duy cởi mở hơn, những thông tin ấy mới được đến tai chúng ta?"
+        },
+        {
+        "idList": "18",
+        "idType": "2",
+        "name": "Chú Già Nuôi Mèo Ú - Tập 4",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/c/h/chu-gia-nuoi-meo-u-tap-4.jpg",
+        "author": "Umi Sakurai",
+        "price": "100000",
+        "description":
+            "Đây là câu chuyện đồng thoại kể về những tháng ngày hạnh phúc ấm êm giữa một chú mèo từng chẳng được ai yêu và ông chú già của nó."
+        },
+        {
+        "idList": "19",
+        "idType": "2",
+        "name": "Nghìn Lẻ Một Đêm",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/g/nghinle1dem_1.jpg",
+        "author": "Antoine Galland",
+        "price": "100000",
+        "description":
+            "Nghìn lẻ một đêm, tác phẩm vĩ đại bậc nhất của nền văn học Ả Rập từ cổ chí kim, là một trong những công trình sáng tạo đồ sộ và tuyệt diệu của nền văn học thế giới. Macxim Gorki từng ca ngợi: “Trong các di sản tuyệt diệu của sáng tác truyền khẩu dân gian, các câu chuyện cổ tích của nàng Sêhêrazát là di sản đồ sộ nhất."
+        },
+        {
+        "idList": "20",
+        "idType": "2",
+        "name": "Charlotte Và Wilbur (Tái Bản 2018)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_169918.jpg",
+        "author": "E.B.White",
+        "price": "100000",
+        "description":
+            "Charlotte và Wilbur là cuốn sách gõ vào cánh cửa tưởng tượng của tuổi thơ, với tất cả những ai đang là trẻ nhỏ và từng là trẻ nhỏ. Nó mang đến thế giới kỳ diệu mà chỉ những cô bé biết khóc vì chú lợn kẹ sắp bị giết như Fern mới thấu hiểu. Lắng đọng với nhiều tình tiết cảm động, như chuyện Fern đã chăm sóc lợn Wilbur hồi nhỏ, cuộc chia tay cuối cùng giữa Charlotte và Wilbur, và tình bạn nối tiếp với những đứa con, cháu, chắt của Charlotte sau này…"
+        },
+
+
+        {
+        "idList": "21",
+        "idType": "3",
+        "name": "Đôi Lứa Xứng Đôi",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_121408.jpg",
+        "author": "Nam Cao",
+        "price": "100000",
+        "description":
+            "Ở cuốn sách bạn đọc đang cầm trên tay, nhóm biên soạn giới thiệu tập truyện ngắn  Đôi lứa xứng đôi của nhà văn Nam Cao (1917-1951). Được biết, truyện đứng đầu tập vốn được tác giả đặt tên trong bản thảo là 'Cái lò gạch cũ', nhưng người viết lời tựa cho tập truyện - nhà văn Lê Văn Trương - đổi thành 'Đôi lứa xứng đôi'."
+        },
+        {
+        "idList": "22",
+        "idType": "3",
+        "name": "Từ Những Điểm Nhìn Tham Chiếu",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_187136.jpg",
+        "author": "TS Phan Tuấn Anh",
+        "price": "100000",
+        "description":
+            "PGS. TS. Hồ Thế Hà - Xuất phát từ sự phong phú và tiềm tàng của nền văn học đa trị, đa phong cách mà phạm vi của nó là nhiều đối tượng, nhiều khu vực văn học Việt Nam thời kỳ đổi mới có khả năng kích hoạt sự phát triển của cả nền văn học trong tương lai, Tiến sĩ Phan Tuấn Anh đã tham chiếu chúng từ nhiều lý thuyết, nhiều hệ hình phê bình văn học, nhất là lý thuyết văn học hậu hiện đại để giải mã chung một cách mới mẻ, linh hoạt, nhằm chỉ ra sự vận động hợp quy luật trong sáng tạo của tác giả và tiếp nhận của độc giả thời hiện đại và đương đại mà nền tảng quyết định sự kích hoạt hiệu quả của chúng là đường lối đổi mới của Đảng (1986) về văn học nghệ thuật. Tập sách, vì vậy là một thức nhận mới mẻ và năng động, đa diện và đa chiều của  của tác giả Phan Tuấn Anh - nhà lý luận phê bình luôn có ý hướng tìm tòi và cách tân cách đọc văn chương Việt hiện đại và đương đại; mong hướng đến sự đổi mới lý luận và phê bình văn học Việt Nam trong xu hướng toàn cầu hóa và liên ngành hóa. Theo đó, công trình tích hợp được nhiều điểm nhìn tham chiếu phái sinh mới mẻ, tạo ra nhiều cách đọc đồng sáng tạo cho độc giả, cả độc giả "
+        },
+        {
+        "idList": "23",
+        "idType": "3",
+        "name": "Bước Đường Cùng",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_119171.jpg",
+        "author": "Nguyễn Công Hoan",
+        "price": "100000",
+        "description":
+            "Nguyễn Công Hoan (1903 - 1977) là nhà văn tiêu biểu của văn học hiện thực phê phán Việt Nam. Thế giới truyện ngắn Nguyễn Công Hoan đa dạng, phong phú, như một 'bách khoa thư', một 'tấn trò đời' mà đặc trưng là xã hội thuộc địa nửa phong kiến ở Việt Nam nửa đầu thế kỷ XX. Với một số lượng khá lớn như vậy, truyện ngắn của Nguyễn Công Hoan họp lại thành một bức tranh rộng lớn, khá đầy đủ về xã hội cũ."
+        },
+        {
+        "idList": "24",
+        "idType": "3",
+        "name": "Truyện Ngắn Nguyễn Công Hoan",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936049953569_1.jpg",
+        "author": "Nguyễn Công Hoan",
+        "price": "100000",
+        "description":
+            "Từ điển bách khoa Việt Nam cũng đánh giá: 'Có thể nói Nguyễn Công Hoan là ngọn cờ đầu của văn học hiện thực phê phán Việt Nam... Nguyễn Công Hoan đến với chủ nghĩa hiện thực bằng văn học trào phúng. Từ những truyện đầu tiên, ông đã tìm đề tài trong những người nghèo khổ, cùng khốn của xã hội. Đa số nhân vật phản diện của ông đều thuộc tầng lớp thượng lưu giàu có và quan lại, cường hào. Toàn những cảnh xấu xa, bỉ ổi, những chuyện bất công, ngang ngược, những con người ghê tởm, đáng khinh bỉ. Nguyễn Công Hoan tạo ra những tình huống bất ngờ, rồi phá lên cười và làm cho người khác cười theo, nhưng ngẫm lại thật thương tâm đau xót.'"
+        },
+        {
+        "idList": "25",
+        "idType": "3",
+        "name": "Thi Nhân Việt Nam",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_33746.jpg",
+        "author": "Hoài Thanh, Hoài Chân",
+        "price": "100000",
+        "description":
+            "Thi nhân Việt Nam là công trình biên khảo có giá trị tin cậy về phong trào Thơ mới, cả về ba mặt: nghiên cứu, phê bình và tuyển thơ. Cuốn sách ra đời sau khi hành trình thơ mới đã đi được 10 năm và vẫn còn tiếp tục chặng đường, nhưng vẫn có ý nghĩa của một công trình tổng kết cả phong trào."
+        },
+        {
+        "idList": "26",
+        "idType": "3",
+        "name": "Tắt Đèn",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_1331.jpg",
+        "author": "Ngô Tất Tố",
+        "price": "100000",
+        "description":
+            "Tắt Đèn - một tác phẩm sâu sắc của Ngô Tất Tố, nói một cách khác thì Tắt Đèn là một bản cáo trạng đanh thép, kết án nghiêm khắc bọn thống trị áp bức, bóc lột nông dân đến tận xương tủy. Ngòi bút của Ngô Tất Tố đã dũng cảm bóc trần thực trạng đen tối, ngột ngạt của cuộc sống ở nông thôn, Ngô Tất Tố đã vẽ lên bức tranh chân thực về cuộc sống lầm than của những người nghèo khổ làm cho người đọc hết lòng xót thương, căm giận"
+        },
+        {
+        "idList": "27",
+        "idType": "3",
+        "name": "Bỉ Vỏ",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/t/i/tinh_hoa_van_hoc_viet_nam___bi_vo_1_2018_07_25_13_51_25.JPG",
+        "author": "Nguyên Hồng",
+        "price": "100000",
+        "description":
+            "Tiểu thuyết Bỉ vỏ của Nguyên Hồng được viết trong những năm 1935 – 1936, xuất bản lần đầu năm 1938 là một trong những tác phẩm xuất sắc của dòng văn học hiện thực phê phán."
+        },
+        {
+        "idList": "28",
+        "idType": "3",
+        "name": "Truyện Ngắn Nguyễn Công Hoan",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936049953569_1.jpg",
+        "author": "Nguyễn Công Hoan",
+        "price": "100000",
+        "description":
+            "Từ điển bách khoa Việt Nam cũng đánh giá: 'Có thể nói Nguyễn Công Hoan là ngọn cờ đầu của văn học hiện thực phê phán Việt Nam... Nguyễn Công Hoan đến với chủ nghĩa hiện thực bằng văn học trào phúng. Từ những truyện đầu tiên, ông đã tìm đề tài trong những người nghèo khổ, cùng khốn của xã hội. Đa số nhân vật phản diện của ông đều thuộc tầng lớp thượng lưu giàu có và quan lại, cường hào. Toàn những cảnh xấu xa, bỉ ổi, những chuyện bất công, ngang ngược, những con người ghê tởm, đáng khinh bỉ. Nguyễn Công Hoan tạo ra những tình huống bất ngờ, rồi phá lên cười và làm cho người khác cười theo, nhưng ngẫm lại thật thương tâm đau xót.'"
+        },
+        {
+        "idList": "29",
+        "idType": "3",
+        "name": "Cơm Thầy Cơm Cô Và Những Truyện Khác",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_179847.jpg",
+        "author": "Vũ Trọng Phụng",
+        "price": "100000",
+        "description":
+            "Cơm Thầy Cơm Cô (đăng báo 1936) cũng là một phóng sự mô tả hiện tượng những người dân thôn quê tìm ra đô thị do hấp lực của “ánh sáng kinh thành” để rồi bị biến thành những vú em, con sen thằng ở, thằng bồi thằng xe, bị bóc lột sức lực, bị lạm dụng tình dục, bị buôn đi bán lại, không ít người biến thành trộm cắp, đĩ điếm, làm gia tăng các tệ nạn xã hội. Ở đây nhà văn đã sớm phát hiện những hậu quả tha hóa, phi nhân hóa, gây ra bởi sự di dân, sự nhập cư, là những hiện tượng mà quy mô sẽ tăng lên hàng chục hàng trăm lần khi xã hội ta bước sang thời công nghiêp hóa, hiện đại hóa, đô thị hóa. Một số truyện khác: Con người điêu trá, cuộc vui ít có, bụng trẻ con, tình là dây oan...."
+        },
+        {
+        "idList": "30",
+        "idType": "3",
+        "name": "Nằm Vạ",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_1394.jpg",
+        "author": "Bùi Hiển",
+        "price": "100000",
+        "description":
+            "Anh Đỏ vào lôi chị ra, chị bíu chặt lấy chân giường, miệng ngoặp vào chân chồng. Anh đau quá kêu lên: ‘Ái! Đồ chó cắn tề! Được, đã muốn nằm vạ, tau cho nằm. Bà mẹ chồng đang bán ngoại chợ mẻ cá mà con đánh được hồi đêm... vội chạy về. Với tất cả cái hùng hổ của những mụ già, mụ xăm xăm vào buồng... Mụ cúi định lôi dậy, lại bị ngoặp vào tay; mụ vừa chạy ra, vừa kêu như sắp bị chết chém: 'Ủa làng nước ôi! Ủa làng nước ôi! Hắn cắn đứt tay tui rồi!"
+        },
+        
+
+        {
+        "idList": "31",
+        "idType": "4",
+        "name": "Bắt Lửa",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_21409.jpg",
+        "author": "Suzanne Collins",
+        "price": "100000",
+        "description":
+            "Trong phần I, người đọc được đến với bối cảnh của Bắc Mỹ trong tương lai với Đấu Trường Sinh Tử được tổ chức hàng năm nhằm mục đích răn đe dân chúng. Người tham gia - Vật Tế - là những trẻ em từ 12 - 18 tuổi, mỗi Quận chọn ra 2 người, 1 trai và 1 gái. Chúng cùng vào trường đấu và tàn sát lẫn nhau cho tới khi chỉ còn 1 người sống sót. Đến từ Quận 12 là cô gái 16 tuổi Katniss Everdeen và chàng trai Peeta Mellark. Họ đã cùng nhau giành chiến thắng bằng chính khả năng của mình.Nhưng với Capitol - thành phố thủ đô cũ Panem (tên gọi của Nhà nước thống trị Bắc Mỹ) - bọn họ đang lừa dối Chính phủ, đang khơi nguồn cho làn sóng nổi dậy ở nhiều Quận. Capitol muốn trả thù. Liệu Katniss có tiếp tục sự lừa dối để bảo vệ người thân của mình? Trong trái tim cô có phải chỉ tồn tại mình Gale? Liệu sẽ có một cuộc nổi dậy thực sự hay đó chỉ là mơ mộng hão huyền?...Tất cả có trong phần II của bộ truyện kịch tính và mang nhiều ý nghĩa: The Hunger Games - Catching Fire."
+        },
+        {
+        "idList": "32",
+        "idType": "4",
+        "name": "Húng Nhại",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_22183.jpg",
+        "author": "Suzanne Collins",
+        "price": "100000",
+        "description":
+        "Khoảnh khắc Katniss làm nổ tung trường lực tại Huyết trường Tứ phân, một “Đấu trường” khác đã được mở ra, cuộc chiến khốc liệt giữa các quận và Capitol.Nhưng Katniss không sẵn sàng. Bị tổn thương cả thể chất lẫn tinh thần, tận mắt nhìn thấy quê nhà tan hoang, bặt tin Peeta, Katniss hoàn toàn mất phương hướng. Chỉ khi thấy Peeta xuất hiện trên truyền hình Capitol, cô mới có động lực trở thành Húng nhại -  biểu tượng của cuộc nổi dậy - để bảo vệ những người mình yêu thương. Tiếp tục dấn thân vào một “Đấu trường” khác dữ dội hơn nhiều, Katniss cũng phải nhận thêm nhiều mất mát. Peeta có còn như xưa? Bao nhiêu người nữa phải hy sinh cho cuộc chiến? Snow có bị lật đổ?"
+        },
+        {
+        "idList": "33",
+        "idType": "4",
+        "name": "Sherlock Holmes Toàn Tập Tập 3",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_67090.jpg",
+        "author": "Conan Doyle",
+        "price": "100000",
+        "description":
+            "Bạn đọc yêu thích truyện trinh thám thế giới có lẽ không ai là không biết đến tên tuổi của nhà văn Anh Arthur Conan Doyle(1859-1930), cha đẻ của nhân vật thám tử lừng lẫy Sherlock Holmes. Tuy nhiên, không phải ai cũng biết rằng: xung quanh việc ra đời những tác phẩm liên quan đến nhà thám tử tài ba này, bản thân tác giả của nó đã từng có những hành động hết sức ly kỳ, hấp dẫn, không kém những gì mà thám tử Holmes từng phô diễn."
+        },
+        {
+        "idList": "34",
+        "idType": "4",
+        "name": "Babar Du Ký",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_60593.jpg",
+        "author": "Jean de Brunhoff",
+        "price": "100000",
+        "description":
+            "May quá, họ đã an toàn dạt được vào một hòn đảo.Nhưng bọn thổ dân ăn thịt đồng loại này ở đâu ra đấy? Lại còn tay huấn luyện thú  nữa? Và đại ngàn của họ sao lại bỗng trở nên hoang tàn thế này?"
+        },
+        {
+        "idList": "35",
+        "idType": "4",
+        "name": "Mặt Trời Mù",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_83734.jpg",
+        "author": "Curzio Malaparte",
+        "price": "100000",
+        "description":
+            "Mặt Trời Mù Giữa dãy Alpes, cơn ác mộng bắt đầu, những sĩ quan Ý ra lệnh cho đám sơn binh chất phác xung kích dưới làn đạn pháo. Trong số các sĩ quan đó, vì cảm tình và thương xót, có một viên đại úy luôn dõi theo một cậu sơn binh chăn bò luôn đeo chiếc lạc bò trên cổ. Cậu sơn binh đó đã bị giết chết, như hàng trăm con vật, hàng trăm con người lúc tươi vui lúc lầm lũi trên các đỉnh Bạch Sơn (Mont Blanc) phủ tuyết. Còn đại úy, cảm thấy có trách nhiệm trong cái chết của cậu bé, đã phát điên... Ở nơi trận mạc máu tuôn lệ đổ, nơi chỉ có vầng mặt trời mù soi chiếu, sự điên loạn hay mất trí đôi khi chính là những tiếng kêu thét không thành tiếng của lương tri con người. Curzio Malaparte vốn dấn thân vào con đường binh nghiệp từ rất sớm, ông đã phải chứng kiến hàng loạt thảm cảnh của Thế chiến 2 ngay từ những buổi đầu. Chính cái nhì chân xác của người trong cuộc kết hopwj với ngòi bút tuyệt kỹ của một cây viết gạo cội đã làm nên một trong những tiểu thuyết ấn tượng bậc nhất của văn chương Ý..."
+        },
+        {
+        "idList": "36",
+        "idType": "4",
+        "name": "Harry Potter Và Hoàng Tử Lai - Tập 6 (Tái Bản 2017)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/h/a/harrypottervahoangtulaitap6.jpg",
+        "author": "J.K.Rowling",
+        "price": "100000",
+        "description":
+            "Đây là năm thứ 6 của Harry Potter tại trường Hogwarts. Trong lúc những thế lực hắc ám của Voldemort gieo rắc nỗi kinh hoàng và sợ hãi ở khắp nơi, mọi chuyện càng lúc càng trở nên rõ ràng hơn đối với Harry, rằng cậu sẽ sớm phải đối diện với định mệnh của mình. Nhưng liệu Harry đã sẵn sàng vượt qua những thử thách đang chờ đợi phía trước?"
+        },
+        {
+        "idList": "37",
+        "idType": "4",
+        "name": "Người Trộm Bóng (Tái Bản 2017)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_133632.jpg",
+        "author": "Marc Levy",
+        "price": "100000",
+        "description":
+            "Câu trả lời chỉ có thể đến từ NGƯỜI TRỘM BÓNG - một cậu bé có tuổi thơ chẳng mấy yên bình ở một vùng ngoại ô heo hút, bởi qua những lần cầu cứu hay trút bầu tâm sự, chúng đã trở thành bạn bè thân thiết của cậu từ lúc nào không hay.Năm tháng trôi qua, cậu bé ngày nào đã trở thành sinh viên trường Y, những cái bóng lại song hành cùng cậu trong từng bước thăng trầm của cuộc sống, sự nghiệp và cả... tình yêu. Và lần này, những rắc rối thực sự mới bắt đầu lộ diện...Hài hước, dịu dàng mà thấm thía, NGƯỜI TRỘM BÓNG đích thực là một câu chuyện tình yêu được Marc Levy viết ở số nhiều."
+        },
+        {
+        "idList": "38",
+        "idType": "4",
+        "name": "Chúa Ruồi (Tái Bản 2017)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8935235213852.jpg",
+        "author": "William Golding",
+        "price": "100000",
+        "description":
+            "Trong một cuộc chiến tranh nguyên tử, mấy chục đứa trẻ chưa đến tuổi thiếu niên “may mắn” sống sót trên một hoang đảo sau khi chiếc máy bay chở chúng đi sơ tán bị trúng đạn. Chúng tập họp dưới bầu trời Nam Thái Bình Dương nắng gắt, chia sẻ gánh nặng và đặt niềm tin vào thủ lĩnh. Nhưng rồi, cái đói và thiên nhiên khắc nghiệt từng bước vắt kiệt bọn trẻ. Bản năng sinh tồn đã dần bóp nghẹt sự ngây thơ - từ đây thực tại của chúng tan hòa vào ác mộng."
+        },
+        {
+        "idList": "39",
+        "idType": "4",
+        "name": "Nàng Tiên Cá",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936037710853.jpg",
+        "author": "Nhiều Tác Giả",
+        "price": "100000",
+        "description":
+            "Những câu chuyện cổ tích này ngoài có yếu tố giải trí, kích thích sự tò mò của các bé, thì nó còn mang rất nhiều tác dụng. Và tận dụng những ưu điểm như vậy, Thái Hà Books kết hợp song ngữ Anh Việt với 10 cuốn truyện cổ tích này để trẻ học tiếng anh mà không hề cảm thấy nhàm chán."
+        },
+        {
+        "idList": "40",
+        "idType": "4",
+        "name": "Muối Của Tình Yêu",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_65927.jpg",
+        "author": "Sarah Dessen",
+        "price": "100000",
+        "description":
+            "Scarlett Thomas là một cô bé mạnh mẽ đến kỳ lạ, gây ấn tượng rực rỡ với mái tóc đỏ và những nét cá tính khác biệt. Trong ký ức của Halley vào năm mười một tuổi khi lần đầu gặp Scarlett là cô bạn đã chăm sóc cả mẹ, thay vì ngược lại. Halley và Scarlett lớn lên bên nhau, vô cùng thân thiết. Họ dậy thì cùng lúc, cùng thích xem phim kinh dị và như các cô bé mới lớn khác, họ thích mấy trò đùa ngớ ngẩn. Cuộc sống của họ tương hợp một cách hoàn hảo và dường như Scarlett bao giờ cũng là điểm tựa cho Halley."
+        },
+
+
+        {
+        "idList": "41",
+        "idType": "5",
+        "name": "Bàn Về Văn Hóa Du Lịch Việt Nam",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_119106.jpg",
+        "author": "Phan Huy Xu , Võ Văn Thành",
+        "price": "100000",
+        "description":
+            "Công trình cũng bước đầu làm rõ xu hướng du lịch chuyển từ kiểu “viếng thăm” hay ngắm cảnh thông thường (theo kiểu “du hí”) để chuyển sang du lịch tìm hiểu sâu về giá trị văn hóa và cuộc sống cư dân bản địa với những sản phẩm du lịch văn hóa, du lịch tâm linh...; xa hơn là mô hình du lịch “wellness tourism” nhằm thỏa mãn một tổ hợp những nhu cầu về thể chất và tâm trí, tinh thần con người, hoặc xu hướng “du lịch sành điệu”..."
+        },
+        {
+        "idList": "42",
+        "idType": "5",
+        "name": "Đà Lạt Một Thời Hương Xa (Du Khảo Văn Hóa Đà Lạt 1954 - 1975)",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_116960.jpg",
+        "author": "Nguyễn Vĩnh Nguyên",
+        "price": "100000",
+        "description":
+            "Đà Lạt được kiến tạo từ những cuộc du hành văn hóa trong quá khứ. Đà Lạt từng là không gian văn hóa đô thị có sức hấp dẫn riêng, nơi gặp gỡ của những khát vọng tri thức lớn, điểm đến của những hành trình sáng tạo đầy lý tưởng. Tất cả đặc biệt cô đọng trong giai đoạn hai mươi năm mà tác giả cuốn sách này chọn khảo sát - một quá khứ gần - nhưng dường như đang đứng trước nguy cơ bị phủ lấp, xóa nhòa bởi bụi thời gian…"
+        },
+        {
+        "idList": "43",
+        "idType": "5",
+        "name": "Theo Dòng Văn Minh Nhân Loại",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_62648.jpg",
+        "author": "Triệu Hâm San",
+        "price": "100000",
+        "description":
+            "Theo dòng văn minh nhân loại” được đan bện bởi hai thế giới: thế giới dưới ánh sáng Mặt Trời và thế giới dưới ánh sáng Mặt Trăng. Cái trước là hiện thực cứng cỏi, cái sau là nguyên lý mềm dảo… Hai thế giới ấy như là đôi chân-mà Văn minh nhân loại (bảy, tám ngàn năm nay) đi qua bằng chính đôi chân này, từng bước, từng bước rất chậm chạp và vô cùng gian nan, chỉ sau chiến tranh thế giới thứ hai, những bước chân của “cuộc rong ruổi văn minh nhân loại” mới sải nhanh lên rõ rệt…"
+        },
+        {
+        "idList": "44",
+        "idType": "5",
+        "name": "Tục Hay Lệ Lạ Thăng Long - Hà Nội",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/7/9786045624517.jpg",
+        "author": "Đỗ Thị Hảo",
+        "price": "100000",
+        "description":
+            "Như tên gọi, cuốn sách dày hơn 600 trang được chia làm hai phần gồm 'Những văn bản Tục lệ thành văn hiện còn lưu giữ được' và 'Những Tục lệ bất thành văn còn lưu truyền trong dân gian' giới thiệu với độc giả những Tục lệ hay và lạ của Thăng Long - Hà Nội."
+        },
+        {
+        "idList": "45",
+        "idType": "5",
+        "name": "Du Lịch Việt Nam Qua 26 Di Sản Thế Giới",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_120904.jpg",
+        "author": "Võ Văn Thành",
+        "price": "100000",
+        "description":
+            "Việt Nam là một nước có nhiều Di sản Thế giới. Theo số liệu thống kê mới nhất đến tháng 12 năm 2016, cả nước hiện có 26 Di sản Thế giới được UNESCO công nhận thuộc các lĩnh vực như: Di sản thiên nhiên, di sản địa chất toàn cầu, di sản văn hóa vật thể, di sản văn hóa phi vật thể, di sản tư liệu và di sản hỗn hợp. Đây là nguồn tài nguyên vô cùng quý giá để phát triển du lịch Việt Nam trong thời đại toàn cầu hóa và hội nhập quốc tế."
+        },
+        {
+        "idList": "46",
+        "idType": "5",
+        "name": "Cẩm Nang Du Lịch Văn Hóa Tâm Linh Việt Nam",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/i/m/image_195509_1_5236.jpg",
+        "author": "Nguyễn Trường Tân",
+        "price": "100000",
+        "description":
+            "Giới thiệu đến bạn đọc nhiều vấn đề để lựa chọn rồi từ đó hoạch định cho mình những gì phải nhớ, phải làm, sẵn sàng ứng phó với những điều bất cập, để chuyến du hành của bạn trở nên đầy hứng thú và hữu ích, những điều cần biết khi đi du lịch, những thông tin quan trọng về các địa chỉ cần đến, được chọn lọc và rút ra từ những nguồn sử liệu và các địa chỉ du lịch văn hóa – tâm linh trải khắp Việt Nam."
+        },
+        {
+        "idList": "47",
+        "idType": "5",
+        "name": "Cẩm Nang Du Lịch Anh Quốc",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936071674807.jpg",
+        "author": "Dorling Kindersley Limited",
+        "price": "100000",
+        "description":
+            "Cuốn cẩm nang này sẽ giúp bạn có được trải nghiệm tuyệt vời nhất trong chuyến du lịch đảo Anh, với hàng loạt thông tin thiết thực và gợi ý hữu ích từ các chuyên gia. Phần Giới thiệu đảo Anh cho bạn cái nhìn tổng thể về bối cảnh văn hóa và lịch sử của đảo quốc này. Sáu chương tiếp theo cộng với chương về London sẽ giới thiệu các vùng miền của đảo Anh, miêu tả các thắng cảnh quan trọng kèm theo bản đồ và hình ảnh minh họa. Các mục chính đề cập các chủ đề từ kiến trúc, vườn tược đến các môn thể thao. Hướng dẫn về nhà hàng và khách sạn nằm ở phần Hành trang du khách. Phần Những điều cần biết cung cấp những thông tin thiết thực về mọi vấn đề từ giao thông cho đến an toàn cá nhân."
+        },
+        {
+        "idList": "48",
+        "idType": "5",
+        "name": "Cẩm Nang Du Lịch Nhật Bản",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936071674777.jpg",
+        "author": "Dorling Kindersley Limited",
+        "price": "100000",
+        "description":
+            "Cuốn cẩm nang này sẽ giúp bạn có được những trải nghiệm tuyệt vời nhất trong chuyến du lịch Nhật Bản với hàng loạt thông tin thực tiễn và gợi ý từ các chuyên gia. Phần Giới thiệu đất nước Nhật Bản sẽ vẽ ra cho bạn một hình dung về nước Nhật gắn với bối cảnh lịch sử và văn hóa. Tiếp theo, các phần về Tokyo và 8 vùng địa lí sẽ miêu tả cụ thể các điểm tham quan quan trọng kèm bản đồ, hình ảnh và tranh minh họa. Hướng dẫn về nhà hàng và khách sạn nằm ở phần Hành trang du khách, cùng với nhiều lời khuyên chung về các loại hình nhà nghỉ và ẩm thực Nhật Bản. Phần Những điều cần biết cung cấp nhiều thông tin thiết thực về mọi vấn đề, từ giao thông cho tới các phép tắc cư xử, xã giao."
+        },
+        {
+        "idList": "49",
+        "idType": "5",
+        "name": "Cẩm Nang Du Lịch Thái Lan",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/8/9/8936071674784.jpg",
+        "author": "Dorling Kindersley Limited",
+        "price": "100000",
+        "description":
+            "Cuốn cẩm nang này sẽ giúp bạn có được những trải nghiệm tuyệt vời nhất trong chuyến du lịch Thái Lan, với hàng loạt những thông tin thiết thực và gợi ý hữu ích từ các chuyên gia. Phần Giới thiệu Thái Lan phác họa cho bạn cái nhìn tổng thể về bối cảnh văn hóa và lịch sử của quốc gia này. Năm phần tiếp theo giới thiệu về năm miền địa lí của Thái Lan, cộng với Bangkok, và miêu tả các thắng cảnh quan trọng kèm theo bản đồ, hình ảnh và tranh minh họa. Các mục chính đề cập các chủ đề từ kiến trúc và mĩ nghệ cho đến động vật hoang dã và các môn thể thao. Hướng dẫn về nhà hàng và khách sạn nằm ở phần Hành trang du khách. Phần Những điều cần biết cung cấp những thông tin thiết thực về mọi vấn đề từ giao thông cho đến an toàn cá nhân."
+        },
+        {
+        "idList": "50",
+        "idType": "5",
+        "name": "Cẩm Nang Du Lịch - Mỹ",
+        "image":
+            "https://cdn0.fahasa.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/b/i/bia-nuoc-my.jpg",
+        "author": "Dorling Kindersley Limited",
+        "price": "100000",
+        "description":
+            "Cuốn cẩm nang này sẽ giúp bạn có được trải nghiệm tuyệt vời nhất trong chuyến du lịch nước Mỹ, với hàng loạt thông tin thiết thực và gợi ý hữu ích từ các chuyên gia. Phần Sơ lược về nước Mỹ cho bạn cái nhìn tổng thể về bối cảnh văn hóa và lịch sử của đất nước này. Các chương tiếp sẽ giới thiệu các thắng cảnh quan trọng, các điểm đến du lịch nổi tiếng tại 50 tiểu bang nước Mỹ, kèm theo bản đồ và hình ảnh minh họa. Hướng dẫn chi tiết về các nhà hàng và khách sạn nên đến nằm ở phần Hành trang du khách. Phần Những điều cần biết cung cấp những thông tin thiết thực về mọi vấn đề từ đi lại, giao thông, visa cho đến an toàn cá nhân đối với du khách nước ngoài."
+        }
+    ]
+
+}

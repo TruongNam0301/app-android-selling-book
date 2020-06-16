@@ -19,7 +19,10 @@ const Drawer = createDrawerNavigator();
 
 function SearchStackScreen (){
   return (
-    <SearchScreen/>
+    <AppNavigator.Navigator  initialRouteName = "SearchScreen">
+      <AppNavigator.Screen name = 'SearchScreen' component = {SearchScreen}/>
+      <AppNavigator.Screen name = "BookInfo"  component = {BookInfoScreen} />
+    </AppNavigator.Navigator>
   )
 }
 
@@ -32,6 +35,8 @@ function DrawerNavigation(){
 }
 
 function TabNavigation(){
+  
+
   return (
     <Tab.Navigator
             screenOptions = {({ route }) => ({
@@ -54,15 +59,10 @@ function TabNavigation(){
               activeTintColor: 'tomato',
               inactiveTintColor: 'gray',
               keyboardHidesTabBar: true,
-              style: {
-              position:'absolute'
-              },
             }}
-             
           >
             <Tab.Screen name = "Home" component = {HomeStackScreen} />
             <Tab.Screen name = "Search" component = {SearchStackScreen} 
-           
             />
             <Tab.Screen name = "Cart" component = {CartBook} />
           </Tab.Navigator>
@@ -72,7 +72,6 @@ function TabNavigation(){
 function HomeStackScreen ({navigation}){
   return (
       <AppNavigator.Navigator initialRouteName = "Home">
-        
         <AppNavigator.Screen 
           name = "Home" 
           component = {HomeScreen}
