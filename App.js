@@ -1,5 +1,5 @@
 import React ,{ Component } from 'react';
-import { Text } from 'react-native';
+import { Text,View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -9,6 +9,7 @@ import HomeScreen from './screenhome/home';
 import DetailsScreen from './screenhome/detail';
 import BookInfoScreen from './screenhome/book';
 import { CartProvider } from './screencart/cartdata';
+import {CartContext} from './screencart/cartdata';
 import CartBook from './screencart/CartBook';
 import SearchScreen from './screensearch/bookSearch';
   
@@ -35,23 +36,26 @@ function DrawerNavigation(){
 }
 
 function TabNavigation(){
-  
-
   return (
     <Tab.Navigator
             screenOptions = {({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {
                 let iconName;
                 if (route.name === 'Home') {
-                  iconName = 'ios-home';
+                  iconName='ios-home'
                 } 
                 else if (route.name === 'Cart') {
-                  iconName = 'ios-cart';
+                  return (
+                    <HomeIconWithBadge
+                      name = {'ios-cart'}
+                      size={size}
+                      color={color}
+                    />
+                  );
                 }
                 else if(route.name === 'Search'){
                   iconName = 'ios-search';
                 }
-                // You can return any component that you like here!
                 return <Ionicons name = {iconName} size = {size} color = {color} />;
               },
             })}
@@ -68,7 +72,42 @@ function TabNavigation(){
           </Tab.Navigator>
   )
 }
-
+function IconWithBadge({ name, badgeCount, color, size }) {
+  return (
+    <View style={{ width: 24, height: 24, margin: 5 }}>
+      <Ionicons name={name} size={size} color={color} />
+      {badgeCount > 0 && (
+        <View
+          style={{
+            position: 'absolute',
+            right: -6,
+            top: -3,
+            backgroundColor: 'red',
+            borderRadius: 6,
+            width: 12,
+            height: 12,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <Text style={{ color: 'white', fontSize: 10, fontWeight: 'bold' }}>
+            {badgeCount}
+          </Text>
+        </View>
+      )}
+    </View>
+  );
+}
+//badgeIcon
+function HomeIconWithBadge(props) {
+  
+  return( 
+    <CartContext.Consumer>{({cartItems})=>(
+      <IconWithBadge {...props} badgeCount={cartItems.length} />
+      )}
+    </CartContext.Consumer>
+  )
+}
 function HomeStackScreen ({navigation}){
   return (
       <AppNavigator.Navigator initialRouteName = "Home">
