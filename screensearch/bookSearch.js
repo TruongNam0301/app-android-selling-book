@@ -10,6 +10,7 @@ import {
   Keyboard,
   KeyboardAvoidingView,
   FlatList,
+  SafeAreaView
 } from "react-native";
 import ListSearch from "../components/ListSearch";
 
@@ -50,6 +51,7 @@ export default class SearchBook extends Component {
     const { searchData } = this.state;
     const { navigation } = this.props;
     return (
+      <SafeAreaView>
       <View >
         <KeyboardAvoidingView>
           <View style={{ alignItems: "center" }}>
@@ -82,6 +84,7 @@ export default class SearchBook extends Component {
           keyExtractor={(item) => item.idList}
         />
       </View>
+      </SafeAreaView>
     );
   }
 }

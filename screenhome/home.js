@@ -1,6 +1,6 @@
 import React, { Component }from 'react';
 import axios from 'axios';
-import { StyleSheet,FlatList } from 'react-native';
+import { StyleSheet,FlatList, SafeAreaView } from 'react-native';
 import ListBookType from '../components/ListBookType';
 
 export default class Home extends Component {
@@ -24,6 +24,7 @@ export default class Home extends Component {
     const {navigation}=this.props;
     const {bookType} = this.state;
     return (
+      <SafeAreaView>
       <FlatList 
         data={bookType}
         renderItem={({ item }) => <ListBookType 
@@ -35,6 +36,7 @@ export default class Home extends Component {
         keyExtractor={item => item.idType}
       >
       </FlatList>
+      </SafeAreaView>
   
     );
   };

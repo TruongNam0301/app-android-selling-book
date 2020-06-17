@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlatList, View, StyleSheet } from "react-native";
+import { FlatList, View, StyleSheet,SafeAreaView } from "react-native";
 import axios from "axios";
 import ListBook from "../components/ListBook";
 
@@ -10,6 +10,7 @@ export default class DetailScreen extends Component {
       items: [],
     };
   }
+  
   componentDidMount(){
     let id = this.props.route.params.type.idType;
     axios.get('http://192.168.100.9:3000/listBook'+'?idType='+id)
@@ -25,6 +26,7 @@ export default class DetailScreen extends Component {
     const { navigation } = this.props;
     const { items } = this.state;
     return (
+      <SafeAreaView>
       <FlatList
         data={items}
         contentContainerStyle={styles.contain}
@@ -43,6 +45,7 @@ export default class DetailScreen extends Component {
         keyExtractor={(item) => item.idList}
         numColumns={2}
       ></FlatList>
+      </SafeAreaView>
     );
   }
 }

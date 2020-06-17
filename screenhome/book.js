@@ -1,31 +1,29 @@
 import React ,{ Component } from 'react';
-import {View,StyleSheet,Text,Image,Button,Alert} from 'react-native';
+import {View,StyleSheet,Text,Image,Button,Alert,SafeAreaView} from 'react-native';
 import {CartContext} from '../screencart/cartdata'
 
 export default class BookScreen extends Component {
-   
     render (){
         let book =this.props.route.params.book;
         return (
-            <View style={{paddingTop:10}}>
-                <View style={{flexDirection:'row'}}>
-                    <Image style={styles.imageBook} source={{uri: book.image}}/>
-                    <View style={styles.infoBook}>
-                        <Text style={styles.nameBook}>{book.name}</Text>
-                        <Text style={styles.authorBook}>Tác giả: {book.author}</Text>
-                        <Text style={styles.priceBook}>Giá Tiền: {book.price}</Text>
-                        <CartContext.Consumer>
-                            {({addToCart})=>(
-                                
+            <SafeAreaView>
+                <View style={{paddingTop:10}}>
+                    <View style={{flexDirection:'row'}}>
+                        <Image style={styles.imageBook} source={{uri: book.image}}/>
+                        <View style={styles.infoBook}>
+                            <Text style={styles.nameBook}>{book.name}</Text>
+                            <Text style={styles.authorBook}>Tác giả: {book.author}</Text>
+                            <Text style={styles.priceBook}>Giá Tiền: {book.price}</Text>
+                            <CartContext.Consumer>
+                                {({addToCart})=>(
                                     <Button title="add to cart"onPress ={()=>{addToCart(book);}} />
-                        
-                            )}
-                        </CartContext.Consumer>
+                                )}
+                            </CartContext.Consumer>
+                        </View>
                     </View>
+                    <Text style={{paddingTop:20}}>{book.description}</Text>
                 </View>
-                <Text style={{paddingTop:20}}>{book.description}</Text>
-                
-            </View>
+            </SafeAreaView>
         )
     }}
     const styles = StyleSheet.create({
