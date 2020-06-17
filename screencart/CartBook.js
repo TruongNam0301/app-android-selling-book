@@ -7,7 +7,7 @@ export default class CartBook extends Component{
     render(){
         return (
             <CartContext.Consumer>
-                {({cartItems, calculateTotal,totalPrice}) =>(
+                {({cartItems, calculateTotal}) =>(
                     <SafeAreaView style={{flex:1}}>
                     <FlatList
                         data ={cartItems}

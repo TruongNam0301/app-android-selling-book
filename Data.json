@@ -33,6 +33,15 @@
             "password": "1"
         }
     ],
+    "Users":[
+        {
+            "idUser":"1",
+            "idAccount":"1",
+            "nameUser": "Nam",
+            "ageUser": "20",
+            "imageUser": "https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat-looking-up.jpg?w=585&scale=down"
+        }
+    ],
     "listBook": [
         {
         "idList": "1",

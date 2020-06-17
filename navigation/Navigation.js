@@ -11,6 +11,7 @@ import BookInfoScreen from "../screenhome/book";
 import { CartProvider,CartContext } from "../screencart/cartdata";
 import CartBook from "../screencart/CartBook";
 import SearchScreen from "../screensearch/bookSearch";
+import Login from '../screenlogin/login';
 
 //import AppNavigator from './navigator.js'
 const AppNavigator = createStackNavigator();
@@ -26,10 +27,11 @@ function SearchStackScreen() {
   );
 }
 
-function DrawerNavigation() {
+function DrawerNavigation({navigation}) {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="home" component={TabNavigation} />
+      <Drawer.Screen name="login" component={Login}/>
     </Drawer.Navigator>
   );
 }

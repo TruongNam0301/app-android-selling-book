@@ -4,15 +4,22 @@ import { Alert,FlatList} from 'react-native';
 export const CartContext = React.createContext();
 
 export class CartProvider extends Component{
+    
     constructor(props){
         super(props);
         this.state = {
+            user: {},
             cartItems: [],
         };
+        this.addUser = this.addUser.bind(this)
         this.addToCart=this.addToCart.bind(this)
         this.increaseQuantity=this.increaseQuantity.bind(this)
         this.decreaseQuantity = this.decreaseQuantity.bind(this) 
         this.calculateTotal= this.calculateTotal.bind(this)
+    }
+
+    addUser(user){
+        this.setState({user})
     }
 
     addToCart (product){ 
@@ -62,8 +69,9 @@ export class CartProvider extends Component{
         return (
                 <CartContext.Provider value = 
                 {{
+                    user: this.state.user,
                     cartItems : this.state.cartItems,
-                    totalPrice : this.state.totalPrice,
+                    addUser: this.addUser,
                     addToCart : this.addToCart,
                     increaseQuantity: this.increaseQuantity,
                     decreaseQuantity: this.decreaseQuantity,

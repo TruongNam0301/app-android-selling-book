@@ -12,23 +12,77 @@ import {
   ImageBackground,
   Keyboard,
   TouchableWithoutFeedback,
+  Alert,
 } from "react-native";
+import { CartContext } from "../screencart/cartdata";
 
 export default class LoginScreen extends Component {
-    constructor(props) {
+  static contextType = CartContext;
+  constructor(props) {
     super(props);
     this.state = {
-      username: '',
-      password: '',
+      username: "",
+      password: "",
     };
-    this.checkLogin= this.checkLogin.bind(this);
+
+    this.change = this.change.bind(this);
   }
-  checkLogin= ()=>{
-      let username =this.state.username;
-      let password = this.state.password;
-      axios.get("http://192.168.100.9:3000/Account"+"?username="+username)
-      
+
+  backScreen = () => {
+    this.props.navigation.goBack();
+  };
+
+  checkLogin = () => {
+    let user;
+    let username = this.state.username;
+    let password = this.state.password;
+    axios
+      .get(
+        "http://192.168.100.9:3000/Account" +
+          "?username=" +
+          username +
+          "&&password=" +
+          password
+      )
+      .then(function (res) {
+        user = res.data;
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+    return user;
+  };
+
+  getDataUser = (idAccount) => {
+    return axios
+      .get("http://192.168.100.9:3000/Users" + "?idAccount=" + idAccount)
+      .then(function (res) {
+        return res.data;
+      });
+  };
+  async change() {
+    const { user, addUser } = this.context;
+    try {
+      const response = await axios.get(
+        "http://192.168.100.9:3000/Account" +
+          "?username=" +
+          this.state.username +
+          "&&password=" +
+          this.state.password
+      );
+      const data = await response.data;
+      if (data.length === 0) {
+        alert("check");
+      } else {
+        const back = await this.backScreen();
+        const getUser = await this.getDataUser(data[0].idAccount);
+        console.log(getUser);
+      }
+    } catch (error) {
+      alert(error);
+    }
   }
+
   render() {
     return (
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
@@ -41,20 +95,31 @@ export default class LoginScreen extends Component {
                 placeholder="username"
                 placeholderTextColor="#D6E5E3"
                 underlineColorAndroid={"transparent"}
-                onChangeText ={(text)=>{this.setState({username: text })}}
+                onChangeText={(text) => {
+                  this.setState({ username: text });
+                }}
               />
               <TextInput
                 style={styles.textInput}
                 placeholder="password"
                 placeholderTextColor="#D6E5E3"
                 underlineColorAndroid={"transparent"}
-                onChangeText ={(text)=>{this.setState({password: text })}}
+                secureTextEntry={true}
+                onChangeText={(text) => {
+                  this.setState({ password: text });
+                }}
               />
-              <TouchableOpacity onPress={this.checkLogin}>
+              <TouchableOpacity onPress={this.change}>
                 <View style={styles.button}>
                   <Text style={{ alignItems: "center" }}>LOGIN</Text>
                 </View>
               </TouchableOpacity>
+              <View style={{ marginTop: 50, flexDirection: "row" }}>
+                <Text>if you dont have account let </Text>
+                <TouchableOpacity>
+                  <Text style={{ color: "blue" }}>register</Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
         </SafeAreaView>
