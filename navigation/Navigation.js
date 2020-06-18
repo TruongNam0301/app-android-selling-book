@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createDrawerNavigator,drawerContent } from "@react-navigation/drawer";
 import { Ionicons } from "@expo/vector-icons";
 import HomeScreen from "../screenhome/home";
 import DetailsScreen from "../screenhome/detail";
@@ -12,6 +12,7 @@ import { CartProvider,CartContext } from "../screencart/cartdata";
 import CartBook from "../screencart/CartBook";
 import SearchScreen from "../screensearch/bookSearch";
 import Login from '../screenlogin/login';
+import ContentDrawer from '../screenlogin/userInfor'
 
 //import AppNavigator from './navigator.js'
 const AppNavigator = createStackNavigator();
@@ -27,9 +28,12 @@ function SearchStackScreen() {
   );
 }
 
-function DrawerNavigation({navigation}) {
+export  function DrawerNavigation() {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator
+      initialRouteName="home"
+      drawerContent={(props) => <ContentDrawer{...props}/>}
+    >
       <Drawer.Screen name="home" component={TabNavigation} />
       <Drawer.Screen name="login" component={Login}/>
     </Drawer.Navigator>

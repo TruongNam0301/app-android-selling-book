@@ -32,27 +32,6 @@ export default class LoginScreen extends Component {
     this.props.navigation.goBack();
   };
 
-  checkLogin = () => {
-    let user;
-    let username = this.state.username;
-    let password = this.state.password;
-    axios
-      .get(
-        "http://192.168.100.9:3000/Account" +
-          "?username=" +
-          username +
-          "&&password=" +
-          password
-      )
-      .then(function (res) {
-        user = res.data;
-      })
-      .catch(function (err) {
-        console.log(err);
-      });
-    return user;
-  };
-
   getDataUser = (idAccount) => {
     return axios
       .get("http://192.168.100.9:3000/Users" + "?idAccount=" + idAccount)
@@ -60,6 +39,7 @@ export default class LoginScreen extends Component {
         return res.data;
       });
   };
+  
   async change() {
     const { user, addUser } = this.context;
     try {
@@ -76,7 +56,7 @@ export default class LoginScreen extends Component {
       } else {
         const back = await this.backScreen();
         const getUser = await this.getDataUser(data[0].idAccount);
-        console.log(getUser);
+        addUser(getUser)
       }
     } catch (error) {
       alert(error);
