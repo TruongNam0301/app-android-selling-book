@@ -8,7 +8,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import { CartContext } from "../screencart/cartdata";
-import { SimpleLineIcons } from "@expo/vector-icons";
+import Icon from 'react-native-vector-icons/SimpleLineIcons';
 import { NavigationContext } from '@react-navigation/native';
 
 export default class Content extends Component {
@@ -34,7 +34,7 @@ export default class Content extends Component {
                   <View>
                   <TouchableOpacity onPress={() => navigation.navigate('home')}>
                     <View style={styles.button}>
-                      <SimpleLineIcons
+                      <Icon
                         style={{ paddingHorizontal: 12 }}
                         name={"home"}
                         size={25}
@@ -45,7 +45,7 @@ export default class Content extends Component {
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => deleteUser()}>
                     <View style={styles.button}>
-                      <SimpleLineIcons
+                      <Icon
                         style={{ paddingHorizontal: 12 }}
                         name={"logout"}
                         size={25}
@@ -60,7 +60,7 @@ export default class Content extends Component {
                 <View>
                   <TouchableOpacity onPress={() => navigation.navigate('home')}>
                     <View style={styles.button}>
-                      <SimpleLineIcons
+                      <Icon
                         style={{ paddingHorizontal: 12 }}
                         name={"home"}
                         size={25}
@@ -71,7 +71,7 @@ export default class Content extends Component {
                   </TouchableOpacity >
                   <TouchableOpacity onPress={() => navigation.navigate('login')}>
                   <View style={styles.button}>
-                    <SimpleLineIcons
+                    <Icon
                       style={{ paddingHorizontal: 12 }}
                       name={"login"}
                       size={25}

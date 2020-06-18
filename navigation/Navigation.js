@@ -4,7 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator,drawerContent } from "@react-navigation/drawer";
-import { Ionicons } from "@expo/vector-icons";
+import Icon from 'react-native-vector-icons/Ionicons';
 import HomeScreen from "../screenhome/home";
 import DetailsScreen from "../screenhome/detail";
 import BookInfoScreen from "../screenhome/book";
@@ -55,7 +55,7 @@ function TabNavigation() {
           } else if (route.name === "Search") {
             iconName = "ios-search";
           }
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Icon name={iconName} size={size} color={color} />;
         },
       })}
       tabBarOptions={{
@@ -73,7 +73,7 @@ function TabNavigation() {
 function IconWithBadge({ name, badgeCount, color, size }) {
   return (
     <View style={{ width: 24, height: 24, margin: 5 }}>
-      <Ionicons name={name} size={size} color={color} />
+      <Icon name={name} size={size} color={color} />
       {badgeCount > 0 && (
         <View
           style={{
@@ -114,7 +114,7 @@ function HomeStackScreen({ navigation }) {
         component={HomeScreen}
         options={{
           headerLeft: () => (
-            <Ionicons
+            <Icon
               style={{ paddingLeft: 20 }}
               name="md-menu"
               size={30}
