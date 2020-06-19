@@ -34,7 +34,7 @@ export default class Home extends Component {
               onPress={() =>
                 navigation.navigate("Details", {
                   type: item,
-                })p
+                })
               }
             />
           )}

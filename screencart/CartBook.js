@@ -4,10 +4,11 @@ import {CartContext} from '../screencart/cartdata';
 import CategoriesCart from '../components/CategoriesCart';
 
 export default class CartBook extends Component{
+
     render(){
         return (
             <CartContext.Consumer>
-                {({cartItems, calculateTotal}) =>(
+                {({cartItems, calculateTotal, postBill}) =>(
                     <SafeAreaView style={{flex:1}}>
                     <FlatList
                         data ={cartItems}
@@ -20,7 +21,7 @@ export default class CartBook extends Component{
                             <Text>Total:</Text>
                             <Text style={{fontSize:30}}>{calculateTotal()}</Text>
                         </View>
-                     <TouchableOpacity>
+                     <TouchableOpacity onPress={()=> postBill()}>
                      <View style={{height:50,width:100,borderRadius:3,backgroundColor:'#D95D39',marginRight:20,marginTop:5,justifyContent:'center'}}>
                      <Text style={{textAlign: "center"}}>THANH TOAN</Text>
                      </View>

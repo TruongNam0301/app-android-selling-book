@@ -11,6 +11,7 @@ import {
   KeyboardAvoidingView,
   FlatList,
   SafeAreaView,
+  ActivityIndicator,
 } from "react-native";
 import ListSearch from "../components/ListSearch";
 
@@ -20,6 +21,7 @@ export default class SearchBook extends Component {
     this.state = {
       items: [],
       searchData: "",
+      show: false,
     };
     this.searchEvent = this.searchEvent.bind(this);
   }
@@ -33,6 +35,9 @@ export default class SearchBook extends Component {
       .catch(function (err) {
         console.error(err.response.status);
       });
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 1800);
   }
   searchEvent = (text) => {
     if (text === "") {
@@ -53,38 +58,47 @@ export default class SearchBook extends Component {
     const { navigation } = this.props;
     return (
       <SafeAreaView>
-        <View style={{marginBottom:50}}>
-          <KeyboardAvoidingView>
-            <View style={{ alignItems: "center" }}>
-              <TextInput
-                style={styles.input}
-                placeholder={"Enter the name of book"}
-                autoFocus={true}
-                returnKeyType={"search"}
-                onSubmitEditing={Keyboard.dismiss}
-                onChangeText={(text) => this.searchEvent(text)}
-              />
-            </View>
-          </KeyboardAvoidingView>
-
-          <FlatList
-            data={searchData}
-            contentContainerStyle={{ paddingBottom: 150 }}
-            renderItem={({ item }) => (
-              <View style={styles.item}>
-                <ListSearch
-                  bookSearch={item}
-                  onPress={() =>
-                    navigation.navigate("BookInfo", {
-                      book: item,
-                    })
-                  }
+        {this.state.show === false ? (
+            <ActivityIndicator style={{marginTop:200}}size="large" color="red" />
+        ) : (
+          <View style={{ marginBottom: 50, backgroundColor: "tomato" ,height:'100%'}}>
+            <KeyboardAvoidingView>
+              <View
+                style={{
+                  alignItems: "center",
+                  marginTop: 20,
+                  backgroundColor: "tomato",
+                }}
+              >
+                <TextInput
+                  style={styles.input}
+                  placeholder={"Enter the name of book"}
+                  autoFocus={true}
+                  returnKeyType={"search"}
+                  onSubmitEditing={Keyboard.dismiss}
+                  onChangeText={(text) => this.searchEvent(text)}
                 />
               </View>
-            )}
-            keyExtractor={(item) => item.idList}
-          />
-        </View>
+            </KeyboardAvoidingView>
+            <FlatList
+              data={searchData}
+              contentContainerStyle={{ paddingBottom: 150 }}
+              renderItem={({ item }) => (
+                <View style={styles.item}>
+                  <ListSearch
+                    bookSearch={item}
+                    onPress={() =>
+                      navigation.navigate("BookInfo", {
+                        book: item,
+                      })
+                    }
+                  />
+                </View>
+              )}
+              keyExtractor={(item) => item.idList}
+            />
+          </View>
+        )}
       </SafeAreaView>
     );
   }

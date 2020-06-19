@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FlatList, View, StyleSheet,SafeAreaView } from "react-native";
+import { FlatList, View, StyleSheet,SafeAreaView, ActivityIndicator, } from "react-native";
 import axios from "axios";
 import ListBook from "../components/ListBook";
 
@@ -8,6 +8,7 @@ export default class DetailScreen extends Component {
     super(props);
     this.state = {
       items: [],
+      show:false,
     };
   }
   
@@ -20,6 +21,9 @@ export default class DetailScreen extends Component {
     .catch (function(err){
       console.error(err.response.status)
     })
+    setTimeout(() => {
+      this.setState({show: true})
+    }, 500);
   }
 
   render() {
@@ -27,6 +31,7 @@ export default class DetailScreen extends Component {
     const { items } = this.state;
     return (
       <SafeAreaView>
+        {this.state.show === false ? <ActivityIndicator style={{marginTop:100}} size="large" color="red"/> :(
       <FlatList
         data={items}
         contentContainerStyle={styles.contain}
@@ -45,6 +50,7 @@ export default class DetailScreen extends Component {
         keyExtractor={(item) => item.idList}
         numColumns={2}
       ></FlatList>
+        )}
       </SafeAreaView>
     );
   }

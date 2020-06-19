@@ -22,8 +22,22 @@ const Drawer = createDrawerNavigator();
 function SearchStackScreen() {
   return (
     <AppNavigator.Navigator initialRouteName="SearchScreen">
-      <AppNavigator.Screen name="SearchScreen" component={SearchScreen} />
-      <AppNavigator.Screen name="BookInfo" component={BookInfoScreen} />
+      <AppNavigator.Screen name="SearchScreen" component={SearchScreen} options={{
+    headerShown: false
+  }} />
+      <AppNavigator.Screen name="BookInfo" component={BookInfoScreen} 
+      options={{
+        headerStyle: {
+          backgroundColor: "#F56416",
+          height: 75,
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          color: "white",
+          textAlign: "center",
+        },
+        headerTitleAlign: "center",
+      }}/>
     </AppNavigator.Navigator>
   );
 }

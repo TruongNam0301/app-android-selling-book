@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Alert, FlatList } from "react-native";
-
+import axios from "axios";
 export const CartContext = React.createContext();
 
 export class CartProvider extends Component {
@@ -9,6 +9,7 @@ export class CartProvider extends Component {
     this.state = {
       user: [],
       cartItems: [],
+
     };
     this.addUser = this.addUser.bind(this);
     this.addToCart = this.addToCart.bind(this);
@@ -16,6 +17,29 @@ export class CartProvider extends Component {
     this.decreaseQuantity = this.decreaseQuantity.bind(this);
     this.calculateTotal = this.calculateTotal.bind(this);
     this.deleteUser = this.deleteUser.bind(this);
+    this.postBill = this.postBill.bind(this);
+  }
+
+  async postBill(){
+    const total =this.calculateTotal();
+    const user = [...this.state.user];
+    const cartItems = [...this.state.cartItems];
+    if(user.length ===1){
+    await axios.post('http://192.168.100.9:3000/Bill', {
+    user: user,
+    cartItems: cartItems,
+    total: total
+  })
+  .then(function (response) {
+    console.log(response);
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
+    }
+    else {
+      alert ('please Login')
+    }
   }
 
   deleteUser (){
@@ -80,6 +104,7 @@ export class CartProvider extends Component {
           decreaseQuantity: this.decreaseQuantity,
           calculateTotal: this.calculateTotal,
           deleteUser: this.deleteUser,
+          postBill: this.postBill,
         }}
       >
         {this.props.children}
