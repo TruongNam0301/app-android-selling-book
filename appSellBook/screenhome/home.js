@@ -10,6 +10,7 @@ export default class Home extends Component {
       bookType: [],
     };
   }
+
   componentDidMount() {
     axios
       .get("http://192.168.100.9:3000/typeBook")

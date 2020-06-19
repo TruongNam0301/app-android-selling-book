@@ -8,31 +8,30 @@ import {
   SafeAreaView,
 } from "react-native";
 import { CartContext } from "../screencart/cartdata";
-import Icon from 'react-native-vector-icons/SimpleLineIcons';
-import { NavigationContext } from '@react-navigation/native';
+import Icon from "react-native-vector-icons/SimpleLineIcons";
+import { NavigationContext } from "@react-navigation/native";
 
 export default class Content extends Component {
-    static contextType = NavigationContext;
+  static contextType = NavigationContext;
   render() {
-      const {navigation} = this.props;
+    const { navigation } = this.props;
     return (
       <CartContext.Consumer>
-        {({ user , deleteUser }) => (
-          
-            <View>
-              {user.length > 0 ? (
-                <View>
-                  <View style={styles.imageWrap}>
-                    <View>
-                      <Image
-                        style={styles.imageUser}
-                        source={{ uri: user[0].imageUser }}
-                      />
-                      <Text style={styles.nameUser}> {user[0].nameUser}</Text>
-                    </View>
-                  </View>
+        {({ user, logOutUser }) => (
+          <View>
+            {user.length > 0 ? (
+              <View>
+                <View style={styles.imageWrap}>
                   <View>
-                  <TouchableOpacity onPress={() => navigation.navigate('home')}>
+                    <Image
+                      style={styles.imageUser}
+                      source={{ uri: user[0].imageUser }}
+                    />
+                    <Text style={styles.nameUser}> {user[0].nameUser}</Text>
+                  </View>
+                </View>
+                <View>
+                  <TouchableOpacity onPress={() => navigation.navigate("home")}>
                     <View style={styles.button}>
                       <Icon
                         style={{ paddingHorizontal: 12 }}
@@ -42,8 +41,8 @@ export default class Content extends Component {
                       />
                       <Text>HOME</Text>
                     </View>
-                    </TouchableOpacity>
-                    <TouchableOpacity onPress={() => deleteUser()}>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => logOutUser()}>
                     <View style={styles.button}>
                       <Icon
                         style={{ paddingHorizontal: 12 }}
@@ -53,23 +52,23 @@ export default class Content extends Component {
                       />
                       <Text>LOGOUT</Text>
                     </View>
-                    </TouchableOpacity >
-                  </View>
+                  </TouchableOpacity>
                 </View>
-              ) : (
-                <View style={{marginTop:20}}>
-                  <TouchableOpacity onPress={() => navigation.navigate('home')}>
-                    <View style={styles.button}>
-                      <Icon
-                        style={{ paddingHorizontal: 12 }}
-                        name={"home"}
-                        size={25}
-                        color={"tomato"}
-                      />
-                      <Text>HOME</Text>
-                    </View>
-                  </TouchableOpacity >
-                  <TouchableOpacity onPress={() => navigation.navigate('login')}>
+              </View>
+            ) : (
+              <View style={{ marginTop: 20 }}>
+                <TouchableOpacity onPress={() => navigation.navigate("home")}>
+                  <View style={styles.button}>
+                    <Icon
+                      style={{ paddingHorizontal: 12 }}
+                      name={"home"}
+                      size={25}
+                      color={"tomato"}
+                    />
+                    <Text>HOME</Text>
+                  </View>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate("login")}>
                   <View style={styles.button}>
                     <Icon
                       style={{ paddingHorizontal: 12 }}
@@ -79,11 +78,10 @@ export default class Content extends Component {
                     />
                     <Text>LOGIN</Text>
                   </View>
-                  </TouchableOpacity>
-                </View>
-              )}
-            </View>
-          
+                </TouchableOpacity>
+              </View>
+            )}
+          </View>
         )}
       </CartContext.Consumer>
     );

@@ -24,7 +24,6 @@ export default class LoginScreen extends Component {
       username: "",
       password: "",
     };
-
     this.change = this.change.bind(this);
   }
 
@@ -39,7 +38,7 @@ export default class LoginScreen extends Component {
         return res.data;
       });
   };
-  
+
   async change() {
     const { user, addUser } = this.context;
     try {
@@ -56,7 +55,7 @@ export default class LoginScreen extends Component {
       } else {
         const back = await this.backScreen();
         const getUser = await this.getDataUser(data[0].idAccount);
-        addUser(getUser)
+        addUser(getUser);
       }
     } catch (error) {
       alert(error);
@@ -68,7 +67,16 @@ export default class LoginScreen extends Component {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <SafeAreaView style={styles.container}>
           <View>
-            <Text style={{ textAlign: "center" ,fontSize:50,fontStyle:'italic',color:'#F56416' }}>Login</Text>
+            <Text
+              style={{
+                textAlign: "center",
+                fontSize: 50,
+                fontStyle: "italic",
+                color: "#F56416",
+              }}
+            >
+              Login
+            </Text>
             <View>
               <TextInput
                 style={styles.textInput}

@@ -15,7 +15,7 @@ export class CartProvider extends Component {
     this.increaseQuantity = this.increaseQuantity.bind(this);
     this.decreaseQuantity = this.decreaseQuantity.bind(this);
     this.calculateTotal = this.calculateTotal.bind(this);
-    this.deleteUser = this.deleteUser.bind(this);
+    this.logOutUser = this.logOutUser.bind(this);
     this.postBill = this.postBill.bind(this);
   }
 
@@ -23,7 +23,7 @@ export class CartProvider extends Component {
     const total = this.calculateTotal();
     const user = [...this.state.user];
     const cartItems = [...this.state.cartItems];
-    if (user.length === 1) {
+    if (user.length === 1 && total > 0) {
       await axios
         .post("http://192.168.100.9:3000/Bill", {
           user: user,
@@ -36,16 +36,19 @@ export class CartProvider extends Component {
         .catch(function (error) {
           console.log(error);
         });
-        alert('Success')
+      alert("Success");
+    } else if (user.length === 1 && total == 0) {
+      alert("the cart is empty");
     } else {
       alert("please Login");
     }
   }
 
-  deleteUser() {
+  logOutUser() {
     let empty = "";
     this.setState({ user: empty });
   }
+
   addUser(user) {
     this.setState({ user });
   }
@@ -91,6 +94,7 @@ export class CartProvider extends Component {
     }
     return total;
   }
+  
   render() {
     const { cartItems } = this.state;
     return (
@@ -103,7 +107,7 @@ export class CartProvider extends Component {
           increaseQuantity: this.increaseQuantity,
           decreaseQuantity: this.decreaseQuantity,
           calculateTotal: this.calculateTotal,
-          deleteUser: this.deleteUser,
+          logOutUser: this.logOutUser,
           postBill: this.postBill,
         }}
       >

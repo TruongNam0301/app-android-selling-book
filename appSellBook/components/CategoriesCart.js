@@ -13,32 +13,40 @@ import { Ionicons } from "@expo/vector-icons";
 export default function CategoriesCart({ item, index }) {
   return (
     <CartContext.Consumer>
-      {({ increaseQuantity ,decreaseQuantity,calculateTotal}) => (
+      {({ increaseQuantity, decreaseQuantity, calculateTotal }) => (
         <View style={styles.swapper}>
           <Image
             style={styles.imageItem}
             resizeMode="contain"
             source={{ uri: item.product.image }}
           />
-          <View >
+          <View>
             <Text style={styles.nameItem}>{item.product.name} </Text>
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.priceItem}>{item.product.price} </Text>
-              <View style ={styles.quantity}>
+              <View style={styles.quantity}>
                 <TouchableOpacity
-                    onPress={() => {
+                  onPress={() => {
                     decreaseQuantity(index);
-                    }}
+                  }}
                 >
-                    <Ionicons name={"ios-remove"} size={30} color={"black"} />
+                  <Ionicons name={"ios-remove"} size={30} color={"black"} />
                 </TouchableOpacity>
-                <Text style={{ fontSize: 20,textAlign: "center" ,paddingHorizontal:20}}>{item.quantity}</Text>
-                <TouchableOpacity
-                    onPress={() => {
-                    increaseQuantity(index);
-                    }}
+                <Text
+                  style={{
+                    fontSize: 20,
+                    textAlign: "center",
+                    paddingHorizontal: 20,
+                  }}
                 >
-                    <Ionicons name={"ios-add"} size={30} color={"black"} />
+                  {item.quantity}
+                </Text>
+                <TouchableOpacity
+                  onPress={() => {
+                    increaseQuantity(index);
+                  }}
+                >
+                  <Ionicons name={"ios-add"} size={30} color={"black"} />
                 </TouchableOpacity>
               </View>
             </View>
@@ -55,9 +63,9 @@ const styles = StyleSheet.create({
     paddingTop: 10,
     flex: 1,
     flexDirection: "row",
-    marginTop:20,
-    marginHorizontal:15,
-    borderRadius:2
+    marginTop: 20,
+    marginHorizontal: 15,
+    borderRadius: 2,
   },
   imageItem: {
     width: 80,
@@ -72,8 +80,8 @@ const styles = StyleSheet.create({
     padding: 10,
   },
   quantity: {
-      flexDirection:"row",
-      alignSelf:'flex-end',
-      marginLeft: 30
-  }
+    flexDirection: "row",
+    alignSelf: "flex-end",
+    marginLeft: 30,
+  },
 });

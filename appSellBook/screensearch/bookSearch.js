@@ -25,6 +25,7 @@ export default class SearchBook extends Component {
     };
     this.searchEvent = this.searchEvent.bind(this);
   }
+  
   componentDidMount() {
     axios
       .get("http://192.168.100.9:3000/listBook")
@@ -39,6 +40,7 @@ export default class SearchBook extends Component {
       this.setState({ show: true });
     }, 1000);
   }
+
   searchEvent = (text) => {
     if (text === "") {
       let value = this.state.items;
@@ -53,15 +55,26 @@ export default class SearchBook extends Component {
     }
     console.log(this.state.searchData);
   };
+
   render() {
     const { searchData } = this.state;
     const { navigation } = this.props;
     return (
       <SafeAreaView>
         {this.state.show === false ? (
-            <ActivityIndicator style={{marginTop:200}}size="large" color="red" />
+          <ActivityIndicator
+            style={{ marginTop: 200 }}
+            size="large"
+            color="red"
+          />
         ) : (
-          <View style={{ marginBottom: 50, backgroundColor: "tomato" ,height:'100%'}}>
+          <View
+            style={{
+              marginBottom: 50,
+              backgroundColor: "tomato",
+              height: "100%",
+            }}
+          >
             <KeyboardAvoidingView>
               <View
                 style={{
