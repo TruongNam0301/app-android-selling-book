@@ -3,16 +3,16 @@ import { Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createDrawerNavigator,drawerContent } from "@react-navigation/drawer";
-import Icon from 'react-native-vector-icons/Ionicons';
+import { createDrawerNavigator, drawerContent } from "@react-navigation/drawer";
+import Icon from "react-native-vector-icons/Ionicons";
 import HomeScreen from "../screenhome/home";
 import DetailsScreen from "../screenhome/detail";
 import BookInfoScreen from "../screenhome/book";
-import { CartProvider,CartContext } from "../screencart/cartdata";
+import { CartProvider, CartContext } from "../screencart/cartdata";
 import CartBook from "../screencart/CartBook";
 import SearchScreen from "../screensearch/bookSearch";
-import Login from '../screenlogin/login';
-import ContentDrawer from '../screenlogin/userInfor'
+import Login from "../screenlogin/login";
+import ContentDrawer from "../screenlogin/userInfor";
 
 //import AppNavigator from './navigator.js'
 const AppNavigator = createStackNavigator();
@@ -28,14 +28,14 @@ function SearchStackScreen() {
   );
 }
 
-export  function DrawerNavigation() {
+export function DrawerNavigation() {
   return (
     <Drawer.Navigator
       initialRouteName="home"
-      drawerContent={(props) => <ContentDrawer{...props}/>}
+      drawerContent={(props) => <ContentDrawer {...props} />}
     >
       <Drawer.Screen name="home" component={TabNavigation} />
-      <Drawer.Screen name="login" component={Login}/>
+      <Drawer.Screen name="login" component={Login} />
     </Drawer.Navigator>
   );
 }
@@ -108,7 +108,21 @@ function HomeIconWithBadge(props) {
 }
 function HomeStackScreen({ navigation }) {
   return (
-    <AppNavigator.Navigator initialRouteName="Home">
+    <AppNavigator.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: "#F56416",
+          height: 75,
+        },
+        headerTitleStyle: {
+          fontWeight: "bold",
+          color: "white",
+          textAlign: "center",
+        },
+        headerTitleAlign: "center",
+      }}
+    >
       <AppNavigator.Screen
         name="Home"
         component={HomeScreen}

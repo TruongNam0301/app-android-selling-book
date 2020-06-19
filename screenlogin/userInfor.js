@@ -57,7 +57,7 @@ export default class Content extends Component {
                   </View>
                 </View>
               ) : (
-                <View>
+                <View style={{marginTop:20}}>
                   <TouchableOpacity onPress={() => navigation.navigate('home')}>
                     <View style={styles.button}>
                       <Icon
@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   imageUser: {
-    marginTop: 12,
+    marginTop: 20,
     width: 130,
     height: 130,
     borderRadius: 65,
@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     alignItems: "center",
     height: 40,
-    borderWidth: 0.3,
+    borderWidth: 1.2,
     borderColor: "tomato",
     borderRadius: 5,
   },

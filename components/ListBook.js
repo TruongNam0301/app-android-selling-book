@@ -8,7 +8,7 @@ export default function ListBook (props) {
     return (
         <TouchableOpacity activeOpacity={0.85} onPress= {onPress}>
         <View style = {styles.item}>
-            <Image style = {styles.imageItem} source = {{uri:bookItem.image}}/>
+            <Image style = {styles.imageItem}  resizeMode= 'stretch' source = {{uri:bookItem.image}}/>
             <View style={styles.infoItem}>
                 <View style={styles.infoBook}>
                     <Text style ={styles.nameItem}> {bookItem.name} </Text>
