@@ -68,7 +68,7 @@ export default class LoginScreen extends Component {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <SafeAreaView style={styles.container}>
           <View>
-            <Text style={{ textAlign: "center" ,fontSize:50,fontFamily: "vincHand", }}>Login</Text>
+            <Text style={{ textAlign: "center" ,fontSize:50,fontStyle:'italic',color:'#F56416' }}>Login</Text>
             <View>
               <TextInput
                 style={styles.textInput}

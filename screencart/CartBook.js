@@ -9,7 +9,7 @@ export default class CartBook extends Component{
         return (
             <CartContext.Consumer>
                 {({cartItems, calculateTotal, postBill}) =>(
-                    <SafeAreaView style={{flex:1}}>
+                    <SafeAreaView style={{flex:1, marginTop:20}}>
                     <FlatList
                         data ={cartItems}
                         renderItem = {({item,index})=> <CategoriesCart item={item} index={index}/>}
@@ -23,7 +23,7 @@ export default class CartBook extends Component{
                         </View>
                      <TouchableOpacity onPress={()=> postBill()}>
                      <View style={{height:50,width:100,borderRadius:3,backgroundColor:'#D95D39',marginRight:20,marginTop:5,justifyContent:'center'}}>
-                     <Text style={{textAlign: "center"}}>THANH TOAN</Text>
+                     <Text style={{textAlign: "center"}}>Buy Book</Text>
                      </View>
                      </TouchableOpacity>
                     </View>

@@ -26,7 +26,8 @@
       "image": "http://www.whitmers.com/travel.jpg"
     }
   ],
-  "Bill": [],
+  "Bill": [
+  ],
   "Account": [
     {
       "idAccount": "1",

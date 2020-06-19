@@ -37,7 +37,7 @@ export default class SearchBook extends Component {
       });
     setTimeout(() => {
       this.setState({ show: true });
-    }, 1800);
+    }, 1000);
   }
   searchEvent = (text) => {
     if (text === "") {

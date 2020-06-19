@@ -9,7 +9,6 @@ export class CartProvider extends Component {
     this.state = {
       user: [],
       cartItems: [],
-
     };
     this.addUser = this.addUser.bind(this);
     this.addToCart = this.addToCart.bind(this);
@@ -20,31 +19,32 @@ export class CartProvider extends Component {
     this.postBill = this.postBill.bind(this);
   }
 
-  async postBill(){
-    const total =this.calculateTotal();
+  async postBill() {
+    const total = this.calculateTotal();
     const user = [...this.state.user];
     const cartItems = [...this.state.cartItems];
-    if(user.length ===1){
-    await axios.post('http://192.168.100.9:3000/Bill', {
-    user: user,
-    cartItems: cartItems,
-    total: total
-  })
-  .then(function (response) {
-    console.log(response);
-  })
-  .catch(function (error) {
-    console.log(error);
-  });
-    }
-    else {
-      alert ('please Login')
+    if (user.length === 1) {
+      await axios
+        .post("http://192.168.100.9:3000/Bill", {
+          user: user,
+          cartItems: cartItems,
+          total: total,
+        })
+        .then(function (response) {
+          console.log(response);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+        alert('Success')
+    } else {
+      alert("please Login");
     }
   }
 
-  deleteUser (){
-    let empty = '';
-    this.setState({user: empty});
+  deleteUser() {
+    let empty = "";
+    this.setState({ user: empty });
   }
   addUser(user) {
     this.setState({ user });
