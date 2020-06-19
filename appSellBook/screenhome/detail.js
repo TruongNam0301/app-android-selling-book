@@ -21,9 +21,9 @@ export default class DetailScreen extends Component {
   componentDidMount() {
     let id = this.props.route.params.type.idType;
     axios
-      .get("http://192.168.100.9:3000/listBook" + "?idType=" + id)
+      .get("https://apibookformobile.herokuapp.com/ListBooks/idType=" + id)
       .then((res) => {
-        this.setState({ items: res.data });
+        this.setState({ items: res.data.book });
       })
       .catch(function (err) {
         console.error(err.response.status);

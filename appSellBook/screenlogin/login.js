@@ -33,9 +33,9 @@ export default class LoginScreen extends Component {
 
   getDataUser = (idAccount) => {
     return axios
-      .get("http://192.168.100.9:3000/Users" + "?idAccount=" + idAccount)
+      .get("https://apibookformobile.herokuapp.com/Users/idAccount=" + idAccount)
       .then(function (res) {
-        return res.data;
+        return res.data.user;
       });
   };
 
@@ -43,19 +43,20 @@ export default class LoginScreen extends Component {
     const { user, addUser } = this.context;
     try {
       const response = await axios.get(
-        "http://192.168.100.9:3000/Account" +
-          "?username=" +
+        "https://apibookformobile.herokuapp.com/Accounts/username="+
           this.state.username +
-          "&&password=" +
+          "/password="+
           this.state.password
       );
-      const data = await response.data;
-      if (data.length === 0) {
+      const data = await response.data.account;
+      
+      if (typeof data === 'undefined') {
         alert("check");
       } else {
         const back = await this.backScreen();
-        const getUser = await this.getDataUser(data[0].idAccount);
+        const getUser = await this.getDataUser(data.idAccount);
         addUser(getUser);
+        
       }
     } catch (error) {
       alert(error);

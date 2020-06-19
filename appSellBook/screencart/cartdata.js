@@ -7,7 +7,7 @@ export class CartProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: [],
+      user: '',
       cartItems: [],
     };
     this.addUser = this.addUser.bind(this);
@@ -21,11 +21,11 @@ export class CartProvider extends Component {
 
   async postBill() {
     const total = this.calculateTotal();
-    const user = [...this.state.user];
-    const cartItems = [...this.state.cartItems];
-    if (user.length === 1 && total > 0) {
+    const user = this.state.user;
+    const cartItems = this.state.cartItems;
+    if (typeof user !== 'string' && total > 0) {
       await axios
-        .post("http://192.168.100.9:3000/Bill", {
+        .post("https://apibookformobile.herokuapp.com/Bills", {
           user: user,
           cartItems: cartItems,
           total: total,
@@ -45,12 +45,14 @@ export class CartProvider extends Component {
   }
 
   logOutUser() {
+    console.log(typeof this.state.user)
     let empty = "";
     this.setState({ user: empty });
   }
 
   addUser(user) {
     this.setState({ user });
+    console.log(this.state.user)
   }
 
   addToCart(product) {

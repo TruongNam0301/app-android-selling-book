@@ -19,15 +19,15 @@ export default class Content extends Component {
       <CartContext.Consumer>
         {({ user, logOutUser }) => (
           <View>
-            {user.length > 0 ? (
+            {typeof user !== 'string' ? (
               <View>
                 <View style={styles.imageWrap}>
                   <View>
                     <Image
                       style={styles.imageUser}
-                      source={{ uri: user[0].imageUser }}
+                      source={{ uri: user.imageUser }}
                     />
-                    <Text style={styles.nameUser}> {user[0].nameUser}</Text>
+                    <Text style={styles.nameUser}> {user.nameUser}</Text>
                   </View>
                 </View>
                 <View>

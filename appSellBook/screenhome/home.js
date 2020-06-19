@@ -7,15 +7,15 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bookType: [],
+      bookType: '',
     };
   }
 
   componentDidMount() {
     axios
-      .get("http://192.168.100.9:3000/typeBook")
+      .get("https://apibookformobile.herokuapp.com/typeBooks")
       .then((res) => {
-        this.setState({ bookType: res.data });
+        this.setState({ bookType: res.data.typeBooks });
       })
       .catch(function (err) {
         console.error(err);

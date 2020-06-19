@@ -28,10 +28,10 @@ export default class SearchBook extends Component {
   
   componentDidMount() {
     axios
-      .get("http://192.168.100.9:3000/listBook")
+      .get("https://apibookformobile.herokuapp.com/listBooks")
       .then((res) => {
-        this.setState({ items: res.data });
-        this.setState({ searchData: res.data });
+        this.setState({ items: res.data.listBooks });
+        this.setState({ searchData: res.data.listBooks });
       })
       .catch(function (err) {
         console.error(err.response.status);
